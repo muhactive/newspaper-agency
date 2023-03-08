@@ -52,6 +52,7 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = "newspaper_agency.urls"
 
+
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
@@ -100,6 +101,7 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+AUTH_USER_MODEL = "newspaper.Redactor"
 
 # Internationalization
 # https://docs.djangoproject.com/en/3.2/topics/i18n/
