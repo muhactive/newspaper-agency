@@ -1,10 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Newspaper agency</title>
-</head>
-<body>
+{% extends "base.html" %}
+
+{% block content %}
 <h1>Newspaper Agency Home</h1>
 <h4>Welcome to Newspaper agency</h4>
 <hr>
@@ -14,6 +10,4 @@
   <li>Number of Redactors: {{ count_redactor }}</li>
   <li>Number of Newspaper: {{ count_newspaper }}</li>
 </ul>
-
-</body>
-</html>
+{% endblock %}
