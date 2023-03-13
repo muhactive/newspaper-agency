@@ -4,7 +4,8 @@ from newspaper.views import (
     index,
     RedactorListView,
     TopicListView,
-    NewspaperListView
+    NewspaperListView,
+    RedactorDetailView
 )
 
 urlpatterns = [
@@ -23,6 +24,11 @@ urlpatterns = [
         "newspapers/",
         NewspaperListView.as_view(),
         name="newspaper-list"
+    ),
+    path(
+        "redactors/<int:pk>/",
+        RedactorDetailView.as_view(),
+        name='redactor-detail'
     )
 ]
 
