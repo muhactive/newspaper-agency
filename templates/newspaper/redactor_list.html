@@ -1,10 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Title</title>
-</head>
-<body>
+{% extends "base.html" %}
 
-</body>
-</html>
+{% block content %}
+  <h1>Redactors List</h1>
+  <br>
+  {% for redactor in redactor_list %}
+    <ul>
+      <li><a href="#">{{ redactor.username }}</a>({{ redactor.first_name }} {{ redactor.last_name }})</li>
+      <hr>
+    </ul>
+  {% empty %}
+    <p>There are no redactors now</p>
+  {% endfor %}
+{% endblock %}
