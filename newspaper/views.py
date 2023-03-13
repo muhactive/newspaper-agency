@@ -9,10 +9,14 @@ def index(request):
     count_redactor = Redactor.objects.count()
     count_newspaper = Newspaper.objects.count()
 
+    num_visit = request.session.get("num_visit", 0)
+    request.session["num_visit"] = num_visit + 1
+
     context = {
         "count_topic": count_topic,
         "count_redactor": count_redactor,
-        "count_newspaper": count_newspaper
+        "count_newspaper": count_newspaper,
+        "num_visit": num_visit + 1
     }
 
     return render(request, "newspaper/index.html", context=context)
