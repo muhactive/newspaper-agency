@@ -37,3 +37,4 @@ class NewspaperListView(generic.ListView):
     paginate_by = 5
     template_name = "newspaper/newspaper_list.html"
     context_object_name = "newspaper_list"
+    queryset = Newspaper.objects.select_related("topic")
