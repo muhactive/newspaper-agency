@@ -44,3 +44,9 @@ class NewspaperListView(generic.ListView):
     template_name = "newspaper/newspaper_list.html"
     context_object_name = "newspaper_list"
     queryset = Newspaper.objects.select_related("topic")
+
+
+class NewspaperDetailView(generic.DetailView):
+    model = Newspaper
+    template_name = "newspaper/newspaper_detail.html"
+    context_object_name = "newspaper_detail"
