@@ -3,7 +3,8 @@ from django.urls import path
 from newspaper.views import (
     index,
     RedactorListView,
-    TopicListView
+    TopicListView,
+    NewspaperListView
 )
 
 urlpatterns = [
@@ -14,9 +15,14 @@ urlpatterns = [
         name="redactor-list"
     ),
     path(
-        "topics",
+        "topics/",
         TopicListView.as_view(),
         name="topic-list"
+    ),
+    path(
+        "newspapers/",
+        NewspaperListView.as_view(),
+        name="newspaper-list"
     )
 ]
 
