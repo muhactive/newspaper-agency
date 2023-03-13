@@ -31,6 +31,12 @@
       {% else %}
       <dd class="text-danger"> No information about <strong>years of experience</strong></dd>
       {% endif %}
-    </dl>
 
+      <dt>Wrote articles in:</dt>
+      {% for newspaper in redactor_detail.newspaper.all %}
+      <dd> {{ newspaper.title }}</dd>
+      {% empty %}
+      <dd class="text-danger"> No information</dd>
+      {% endfor %}
+    </dl>
 {% endblock %}
