@@ -25,6 +25,12 @@ class RedactorListView(generic.ListView):
     context_object_name = "redactor_list"
 
 
+class RedactorDetailView(generic.DetailView):
+    model = Redactor
+    template_name = "newspaper/redactor_detail.html"
+    context_object_name = "redactor_detail"
+
+
 class TopicListView(generic.ListView):
     model = Topic
     paginate_by = 5
