@@ -5,7 +5,8 @@
   <br>
   {% for newspaper in newspaper_list %}
     <ul>
-      <li><a href="#">{{ newspaper.title }}</a> add at ({{ newspaper.published_date }})</li>
+      <li><a href="{% url 'newspaper:newspaper-detail' pk=newspaper.id %}">{{ newspaper.title }}
+      </a> add at ({{ newspaper.published_date }})</li>
       <hr>
     </ul>
   {% empty %}
