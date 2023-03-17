@@ -43,7 +43,7 @@ class RedactorDetailView(LoginRequiredMixin, generic.DetailView):
 class RedactorCreateView(LoginRequiredMixin, generic.CreateView):
     model = Redactor
     form_class = CreateRedactorForm
-    success_url = "newspaper:redactor-list"
+    success_url = reverse_lazy("newspaper:redactor-list")
     template_name = "newspaper/redactor_form.html"
 
 
