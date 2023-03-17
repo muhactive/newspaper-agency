@@ -39,6 +39,12 @@ class RedactorDetailView(LoginRequiredMixin, generic.DetailView):
     context_object_name = "redactor_detail"
 
 
+class RedactorCreateView(LoginRequiredMixin, generic.CreateView):
+    model = Redactor
+    form_class = CreateRedactorForm
+    success_url = "newspaper:redactor-list"
+
+
 class TopicListView(LoginRequiredMixin, generic.ListView):
     model = Topic
     paginate_by = 5
