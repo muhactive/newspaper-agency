@@ -57,7 +57,7 @@ class TopicDeleteView(LoginRequiredMixin, generic.DeleteView):
     models = Topic
     template_name = "newspaper/topic_delete.html"
     success_url = reverse_lazy("newspaper:topic-list")
-    queryset = Topic.objects.all()
+    queryset = Topic.objects.select_related("newspaper")
 
 
 class TopicUpdateView(LoginRequiredMixin, generic.UpdateView):
@@ -99,4 +99,4 @@ class NewspaperDeleteView(LoginRequiredMixin, generic.DeleteView):
     model = Newspaper
     template_name = "newspaper/newspaper_delete.html"
     success_url = reverse_lazy("newspaper:newspaper-list")
-    queryset = Newspaper.objects.all()
+    queryset = Newspaper.objects.select_related("topic")
