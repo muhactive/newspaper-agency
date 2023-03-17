@@ -8,7 +8,8 @@ from newspaper.views import (
     RedactorDetailView,
     NewspaperDetailView,
     TopicCreateView,
-    NewspaperCreateView
+    NewspaperCreateView,
+    TopicDeleteView
 )
 
 urlpatterns = [
@@ -48,7 +49,11 @@ urlpatterns = [
         NewspaperCreateView.as_view(),
         name="newspaper-create"
     ),
-
+    path(
+        "topics/delete/",
+        TopicDeleteView.as_view(),
+        name="topic-delete"
+    )
 ]
 
 app_name = "newspaper"
