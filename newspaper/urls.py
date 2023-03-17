@@ -63,8 +63,13 @@ urlpatterns = [
     )
     path(
         "newspaper/<int:pk>/update/",
-        NewspaperUpdateView(),
+        NewspaperUpdateView.as_view(),
         name="newspaper-update"
+    ),
+    path(
+        "newspaper/<int:pk>/delete",
+        NewspaperDeleteView.as_view(),
+        name="newspaper-delete"
     )
 ]
 
