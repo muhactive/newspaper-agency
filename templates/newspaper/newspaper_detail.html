@@ -34,5 +34,8 @@
 
     <h4><strong>Content</strong></h4>
       <p>{{ newspaper_detail.content }}</p>
+    <hr>
+    <a class="btn btn-secondary" href="{% url 'newspaper:newspaper-update' pk=newspaper_detail.id %}"><strong>Update</strong></a>
+    <a class="btn btn-danger" href="{% url 'newspaper:newspaper-delete' pk=newspaper_detail.id %}"><strong>Delete</strong></a>
   </div>
 {% endblock %}
