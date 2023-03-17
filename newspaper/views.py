@@ -53,6 +53,12 @@ class TopicCreateView(LoginRequiredMixin, generic.CreateView):
     success_url = reverse_lazy("newspaper:topic-list")
 
 
+class TopicDeleteView(LoginRequiredMixin, generic.DeleteView):
+    models = Topic
+    template_name = "newspaper/topic_delete.html"
+    success_url = reverse_lazy("newspaper:topic-list")
+
+
 class NewspaperListView(LoginRequiredMixin, generic.ListView):
     model = Newspaper
     paginate_by = 5
