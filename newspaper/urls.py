@@ -74,7 +74,7 @@ urlpatterns = [
         name="newspaper-delete"
     ),
     path(
-        "redactors/create",
+        "redactors/create/",
         RedactorCreateView.as_view(),
         name="redactor-create"
     )
