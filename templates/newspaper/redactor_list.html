@@ -3,14 +3,28 @@
 {% block content %}
   <h1>Redactors List</h1>
   <br>
-  {% for redactor in redactor_list %}
-      <ul>
-        <li><a href="{% url 'newspaper:redactor-detail' pk=redactor.id %}">{{ redactor.username }} </a>
-          ({{ redactor.first_name }} {{ redactor.last_name }})</li>
-        <hr>
-      </ul>
-  {% empty %}
-    <p>There are no redactors now</p>
-  {% endfor %}
+  {% if redactor_list %}
+    <table class="table">
+      <tr>
+        <th>Id</th>
+        <th>Username</th>
+        <th>First name</th>
+        <th>Last name</th>
+        <th>Detail</th>
+      </tr>
+    {% for redactor in redactor_list %}
+        <tr>
+          <td>{{ redactor.id }}</td>
+          <td>
+            <a href="{% url 'newspaper:redactor-detail' pk=redactor.id %}">{{ redactor.username }}</a>
+          </td>
+          <td>{{ redactor.first_name }}</td>
+          <td>{{ redactor.last_name }}</td>
+          <td><a class="btn btn-secondary" href="{% url 'newspaper:redactor-detail' pk=redactor.id %}">Detail</a></td>
+        </tr>
+
+    {% endfor %}
+      </table>
+  {% endif %}
   <p><a href="{% url 'newspaper:redactor-create' %}">Create new <strong>redactor</strong></a> </p>
 {% endblock %}
