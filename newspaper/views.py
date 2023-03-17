@@ -93,3 +93,10 @@ class NewspaperUpdateView(LoginRequiredMixin, generic.UpdateView):
     fields = "__all__"
     template_name = "newspaper/newspaper_form.html"
     success_url = reverse_lazy("newspaper:newspaper-list")
+
+
+class NewspaperDeleteView(LoginRequiredMixin, generic.DeleteView):
+    model = Newspaper
+    template_name = "newspaper/newspaper_delete.html"
+    success_url = reverse_lazy("newspaper:newspaper-list")
+    queryset = Newspaper.objects.all()

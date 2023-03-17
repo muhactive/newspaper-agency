@@ -11,7 +11,8 @@ from newspaper.views import (
     NewspaperCreateView,
     TopicDeleteView,
     TopicUpdateView,
-    NewspaperUpdateView
+    NewspaperUpdateView,
+    NewspaperDeleteView
 )
 
 urlpatterns = [
