@@ -10,7 +10,7 @@
       <hr>
     </ul>
   {% empty %}
-    <p>There are no newspapers now</p>
+<p>There are no <strong>newspaper</strong> now, but you cat create new newspaper</p>
   {% endfor %}
   <p><a href="{% url 'newspaper:newspaper-create' %}">Create new newspaper</a></p>
 {% endblock %}
