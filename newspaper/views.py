@@ -65,3 +65,10 @@ class NewspaperDetailView(LoginRequiredMixin, generic.DetailView):
     model = Newspaper
     template_name = "newspaper/newspaper_detail.html"
     context_object_name = "newspaper_detail"
+
+
+class NewspaperCreateView(LoginRequiredMixin, generic.CreateView):
+    model = Newspaper
+    fields = "__all__"
+    template_name = "newspaper/newspaper_form.html"
+    success_url = reverse_lazy("newspaper:newspaper-list")
