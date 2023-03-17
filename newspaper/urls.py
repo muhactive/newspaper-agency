@@ -61,14 +61,14 @@ urlpatterns = [
         "topics/<int:pk>/update/",
         TopicUpdateView.as_view(),
         name="topic-update"
-    )
+    ),
     path(
-        "newspaper/<int:pk>/update/",
+        "newspapers/<int:pk>/update/",
         NewspaperUpdateView.as_view(),
         name="newspaper-update"
     ),
     path(
-        "newspaper/<int:pk>/delete",
+        "newspapers/<int:pk>/delete",
         NewspaperDeleteView.as_view(),
         name="newspaper-delete"
     )
