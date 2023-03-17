@@ -12,4 +12,5 @@
   {% empty %}
     <p>There are no redactors now</p>
   {% endfor %}
+  <p><a href="{% url 'newspaper:redactor-create' %}">Create new <strong>redactor</strong></a> </p>
 {% endblock %}
