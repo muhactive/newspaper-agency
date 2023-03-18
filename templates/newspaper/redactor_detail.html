@@ -47,5 +47,6 @@
       <dd class="text-danger"> No information</dd>
       {% endfor %}
       <a class="btn btn-secondary" href="{% url 'newspaper:redactor-update' pk=redactor_detail.id %}">Update</a>
+      <a class="btn btn-danger" href="{% url 'newspaper:redactor-delete' pk=redactor_detail.id %}">Delete</a>
     </dl>
 {% endblock %}
