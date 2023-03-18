@@ -1,7 +1,7 @@
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.shortcuts import render
-from django.urls import reverse_lazy
+from django.urls import reverse_lazy, reverse
 from django.views import generic
 
 from newspaper.forms import CreateRedactorForm
@@ -50,8 +50,13 @@ class RedactorCreateView(LoginRequiredMixin, generic.CreateView):
 class RedactorUpdateView(LoginRequiredMixin, generic.UpdateView):
     model = Redactor
     form_class = CreateRedactorForm
-    success_url = reverse_lazy("newspaper:redactor-detail")
     template_name = "newspaper/redactor_form.html"
+
+    def get_success_url(self):
+        return reverse(
+            "newspaper:redactor-detail",
+            kwargs={"pk": self.object.pk}
+        )
 
 
 class TopicListView(LoginRequiredMixin, generic.ListView):
