@@ -17,10 +17,10 @@
       <td>{{ topic.id }}</td>
       <td>{{ topic.topic }}</td>
       <td>
-        <a href="{% url 'newspaper:topic-update' pk=topic.id %}">Update</a>
+        <a class="text-info" href="{% url 'newspaper:topic-update' pk=topic.id %}">Update</a>
       </td>
       <td>
-        <a href="{% url 'newspaper:topic-delete' pk=topic.id %}">Delete</a>
+        <a class="text-danger" href="{% url 'newspaper:topic-delete' pk=topic.id %}">Delete</a>
       </td>
     </tr>
     {% endfor %}
@@ -28,5 +28,5 @@
   {% else %}
     <p>There are no topic in this page now, but you can create first topic</p>
   {% endif %}
-  <p><a href="{% url 'newspaper:topic-create' %}">Create new Topic</a></p>
+  <p><a class="btn btn-secondary" href="{% url 'newspaper:topic-create' %}">Create new <strong>Topic</strong></a></p>
 {% endblock %}

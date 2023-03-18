@@ -15,16 +15,14 @@
     {% for redactor in redactor_list %}
         <tr>
           <td>{{ redactor.id }}</td>
-          <td>
-            <a href="{% url 'newspaper:redactor-detail' pk=redactor.id %}">{{ redactor.username }}</a>
-          </td>
+          <td>{{ redactor.username }}</td>
           <td>{{ redactor.first_name }}</td>
           <td>{{ redactor.last_name }}</td>
-          <td><a class="btn btn-secondary" href="{% url 'newspaper:redactor-detail' pk=redactor.id %}">Detail</a></td>
+          <td><a class="text-info" href="{% url 'newspaper:redactor-detail' pk=redactor.id %}">DETAIL</a></td>
         </tr>
 
     {% endfor %}
       </table>
   {% endif %}
-  <p><a href="{% url 'newspaper:redactor-create' %}">Create new <strong>redactor</strong></a> </p>
+  <p><a class="btn btn-secondary" href="{% url 'newspaper:redactor-create' %}">Create new <strong>redactor</strong></a> </p>
 {% endblock %}
