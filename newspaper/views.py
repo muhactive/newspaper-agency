@@ -47,6 +47,13 @@ class RedactorCreateView(LoginRequiredMixin, generic.CreateView):
     template_name = "newspaper/redactor_form.html"
 
 
+class RedactorUpdateView(LoginRequiredMixin, generic.UpdateView):
+    model = Redactor
+    form_class = CreateRedactorForm
+    success_url = reverse_lazy("newspaper:redactor-detail")
+    template_name = "newspaper/redactor_form.html"
+
+
 class TopicListView(LoginRequiredMixin, generic.ListView):
     model = Topic
     paginate_by = 5
