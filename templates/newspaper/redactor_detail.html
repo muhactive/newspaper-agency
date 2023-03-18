@@ -13,10 +13,18 @@
       <dd> {{ redactor_detail.username }}</dd>
 
       <dt>First Name:</dt>
+      {% if redactor_detail.first_name  %}
       <dd> {{ redactor_detail.first_name }}</dd>
+      {% else %}
+      <dd class="text-danger"> No information about <strong>First name</strong></dd>
+      {% endif %}
 
       <dt>Last Name:</dt>
+      {% if redactor_detail.last_name %}
       <dd> {{ redactor_detail.last_name }}</dd>
+      {% else %}
+      <dd class="text-danger"> No information about <strong>Last name</strong></dd>
+      {% endif %}
 
       <dt>Email:</dt>
       {% if redactor_detail.email %}
@@ -38,5 +46,6 @@
       {% empty %}
       <dd class="text-danger"> No information</dd>
       {% endfor %}
+      <a class="btn btn-secondary" href="{% url 'newspaper:redactor-update' pk=redactor_detail.id %}">Update</a>
     </dl>
 {% endblock %}
