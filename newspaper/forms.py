@@ -1,9 +1,10 @@
 from django import forms
+from django.contrib.auth.forms import UserCreationForm
 
 from newspaper.models import Redactor
 
 
-class CreateRedactorForm(forms.ModelForm):
+class CreateRedactorForm(UserCreationForm):
     class Meta:
         model = Redactor
         fields = (
@@ -13,3 +14,4 @@ class CreateRedactorForm(forms.ModelForm):
             "email",
             "years_of_experience",
         )
+
