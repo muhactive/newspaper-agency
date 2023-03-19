@@ -41,7 +41,15 @@ class RedactorListView(LoginRequiredMixin, generic.ListView):
         )
         return context
 
+    def get_queryset(self):
+        form = RedactorSearchForm(self.request.GET)
+        queryset = super(RedactorListView, self).get_queryset()
 
+        if form.is_valid():
+            return queryset.filter(
+                username__icontains=form.cleaned_data["name_user"]
+            )
+        return queryset
 
 
 class RedactorDetailView(LoginRequiredMixin, generic.DetailView):
