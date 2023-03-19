@@ -4,7 +4,7 @@ from django.shortcuts import render
 from django.urls import reverse_lazy, reverse
 from django.views import generic
 
-from newspaper.forms import CreateRedactorForm, CreateNewspaperForm
+from newspaper.forms import CreateRedactorForm, CreateNewspaperForm, RedactorSearchForm
 from newspaper.models import Topic, Redactor, Newspaper
 
 
@@ -32,6 +32,16 @@ class RedactorListView(LoginRequiredMixin, generic.ListView):
     paginate_by = 5
     template_name = "newspaper/redactor_list.html"
     context_object_name = "redactor_list"
+
+    def get_context_data(self, *, object_list=None, **kwargs):
+        context = super(RedactorListView, self).get_context_data(**kwargs)
+        name_user = self.request.GET.get("name_user", "")
+        context["search_form"] = RedactorSearchForm(
+            initial={"name_user": name_user}
+        )
+        return context
+
+
 
 
 class RedactorDetailView(LoginRequiredMixin, generic.DetailView):
