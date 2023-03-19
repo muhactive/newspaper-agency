@@ -12,14 +12,14 @@
     <title>Newspaper Agency</title>
 </head>
 <body>
-<div class="container-fluid">
+<div class="container-fluid mt-3">
     <div class="row">
-        <div class="col-sm-3">
+        <div class="col-sm-3 bg-black text-white">
             {% block sidebar %}
               {% include "includes/sidebar.html" %}
             {% endblock %}
         </div>
-        <div class="col_sm_9">
+        <div class="col-sm-9 bg-grey text-black">
             {% block content %}
             {% endblock %}
             {% block pagination %}
