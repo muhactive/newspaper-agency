@@ -3,7 +3,12 @@
 {% block content %}
   <h1>Redactors List</h1>
   <br>
+
   {% if redactor_list %}
+  {% block search_form %}
+    {% include "includes/search_form.html" %}
+  {% endblock %}
+
     <table class="table">
       <tr>
         <th>Id</th>
