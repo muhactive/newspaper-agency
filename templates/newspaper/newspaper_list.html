@@ -3,14 +3,19 @@
 {% block content %}
   <h1>Newspapers List</h1>
   <br>
-  {% for newspaper in newspaper_list %}
-    <ul>
-      <li><a href="{% url 'newspaper:newspaper-detail' pk=newspaper.id %}">{{ newspaper.title }}
-      </a> add at ({{ newspaper.published_date }})</li>
-      <hr>
-    </ul>
-  {% empty %}
-<p>There are no <strong>newspaper</strong> now, but you cat create new newspaper</p>
-  {% endfor %}
+  {% if newspaper_list %}
+    {% block search_form %}
+      {% include "includes/search_form.html" %}
+    {% endblock %}
+    {% for newspaper in newspaper_list %}
+      <ul>
+        <li><a href="{% url 'newspaper:newspaper-detail' pk=newspaper.id %}">{{ newspaper.title }}
+        </a> add at ({{ newspaper.published_date }})</li>
+        <hr>
+      </ul>
+    {% endfor %}
+  {% else %}
+    <p>There are no <strong>newspaper</strong> now, but you cat create new newspaper</p>
+  {% endif %}
   <p><a class="btn btn-secondary" href="{% url 'newspaper:newspaper-create' %}">Create new <strong>Newspaper</strong></a></p>
 {% endblock %}
