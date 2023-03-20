@@ -104,7 +104,7 @@ class TopicListView(LoginRequiredMixin, generic.ListView):
 
         if form.is_valid():
             return queryset.filter(
-                topic__icomtains=form.cleaned_data["name_topic"]
+                topic__icontains=form.cleaned_data["name_topic"]
             )
         return queryset
 

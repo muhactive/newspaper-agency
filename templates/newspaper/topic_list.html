@@ -4,6 +4,9 @@
   <h1> Topics List</h1>
   <br>
   {% if topic_list %}
+    {% block search_form %}
+      {% include "includes/search_form.html" %}
+    {% endblock %}
     <table class="table">
       <tr>
         <th>Id</th>
@@ -11,7 +14,6 @@
         <th>Update</th>
         <th>Create</th>
       </tr>
-
     {% for topic in topic_list %}
     <tr>
       <td>{{ topic.id }}</td>
