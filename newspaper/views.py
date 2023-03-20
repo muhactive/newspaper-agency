@@ -1,5 +1,6 @@
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.mixins import LoginRequiredMixin
+from django.db.models import QuerySet
 from django.shortcuts import render
 from django.urls import reverse_lazy, reverse
 from django.views import generic
@@ -34,7 +35,7 @@ class RedactorListView(LoginRequiredMixin, generic.ListView):
     template_name = "newspaper/redactor_list.html"
     context_object_name = "redactor_list"
 
-    def get_context_data(self, *, object_list=None, **kwargs):
+    def get_context_data(self, *, object_list=None, **kwargs) -> dict:
         context = super(RedactorListView, self).get_context_data(**kwargs)
         name_user = self.request.GET.get("name_user", "")
         context["search_form"] = RedactorSearchForm(
@@ -42,7 +43,7 @@ class RedactorListView(LoginRequiredMixin, generic.ListView):
         )
         return context
 
-    def get_queryset(self):
+    def get_queryset(self) -> QuerySet:
         form = RedactorSearchForm(self.request.GET)
         queryset = super(RedactorListView, self).get_queryset()
 
@@ -71,7 +72,7 @@ class RedactorUpdateView(LoginRequiredMixin, generic.UpdateView):
     form_class = CreateRedactorForm
     template_name = "newspaper/redactor_form.html"
 
-    def get_success_url(self):
+    def get_success_url(self) -> dict:
         return reverse(
             "newspaper:redactor-detail",
             kwargs={"pk": self.object.pk}
@@ -90,7 +91,7 @@ class TopicListView(LoginRequiredMixin, generic.ListView):
     template_name = "newspaper/topic_list.html"
     context_object_name = "topic_list"
 
-    def get_context_data(self, *, object_list=None, **kwargs):
+    def get_context_data(self, *, object_list=None, **kwargs) -> dict:
         context = super(TopicListView, self).get_context_data(**kwargs)
         name_topic = self.request.GET.get("name_topic", "")
         context["search_form"] = TopicSearchForm(
@@ -98,7 +99,7 @@ class TopicListView(LoginRequiredMixin, generic.ListView):
         )
         return context
 
-    def get_queryset(self):
+    def get_queryset(self) -> QuerySet:
         form = TopicSearchForm(self.request.GET)
         queryset = super(TopicListView, self).get_queryset()
 
@@ -137,7 +138,7 @@ class NewspaperListView(LoginRequiredMixin, generic.ListView):
     context_object_name = "newspaper_list"
     queryset = Newspaper.objects.select_related("topic")
 
-    def get_context_data(self, *, object_list=None, **kwargs):
+    def get_context_data(self, *, object_list=None, **kwargs) -> dict:
         context = super(NewspaperListView, self).get_context_data(**kwargs)
         name_title = self.request.GET.get("name_title", "")
         context["search_form"] = NewspaperSearchForm(
@@ -145,7 +146,7 @@ class NewspaperListView(LoginRequiredMixin, generic.ListView):
         )
         return context
 
-    def get_queryset(self):
+    def get_queryset(self) -> QuerySet:
         form = NewspaperSearchForm(self.request.GET)
         queryset = super(NewspaperListView, self).get_queryset()
 
