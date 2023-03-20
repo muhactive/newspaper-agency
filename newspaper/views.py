@@ -5,9 +5,18 @@ from django.shortcuts import render
 from django.urls import reverse_lazy, reverse
 from django.views import generic
 
-from newspaper.forms import CreateRedactorForm, CreateNewspaperForm, RedactorSearchForm, NewspaperSearchForm, \
+from newspaper.forms import (
+    CreateRedactorForm,
+    CreateNewspaperForm,
+    RedactorSearchForm,
+    NewspaperSearchForm,
     TopicSearchForm
-from newspaper.models import Topic, Redactor, Newspaper
+)
+from newspaper.models import (
+    Topic,
+    Redactor,
+    Newspaper
+)
 
 
 @login_required
