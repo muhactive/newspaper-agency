@@ -16,3 +16,17 @@ class TestModel(TestCase):
             str(redactor),
             f"{redactor.first_name} {redactor.last_name}"
         )
+
+    def test_redactor_has_years_of_experience(self):
+        username = "Lilu"
+        password = "123456789lilu"
+        years_of_experience = 2
+        redactor = Redactor.objects.create_user(
+            username="Lilu",
+            password="123456789lilu",
+            years_of_experience=2
+        )
+        self.assertEqual(redactor.username, username)
+        self.assertTrue(redactor.check_password(password))
+        self.assertEqual(redactor.years_of_experience, years_of_experience)
+
