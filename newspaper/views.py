@@ -4,7 +4,7 @@ from django.shortcuts import render
 from django.urls import reverse_lazy, reverse
 from django.views import generic
 
-from newspaper.forms import CreateRedactorForm, CreateNewspaperForm, RedactorSearchForm
+from newspaper.forms import CreateRedactorForm, CreateNewspaperForm, RedactorSearchForm, NewspaperSearchForm
 from newspaper.models import Topic, Redactor, Newspaper
 
 
@@ -117,6 +117,24 @@ class NewspaperListView(LoginRequiredMixin, generic.ListView):
     template_name = "newspaper/newspaper_list.html"
     context_object_name = "newspaper_list"
     queryset = Newspaper.objects.select_related("topic")
+
+    def get_context_data(self, *, object_list=None, **kwargs):
+        context = super(NewspaperListView, self).get_context_data(**kwargs)
+        name_title = self.request.GET.get("name_title", "")
+        context["search_form"] = NewspaperSearchForm(
+            initial={"name_title": name_title}
+        )
+        return context
+
+    def get_queryset(self):
+        form = NewspaperSearchForm(self.request.GET)
+        queryset = super(NewspaperListView, self).get_queryset()
+
+        if form.is_valid():
+            return queryset.filter(
+                title__icontains=form.cleaned_data["name_title"]
+            )
+        return queryset
 
 
 class NewspaperDetailView(LoginRequiredMixin, generic.DetailView):
