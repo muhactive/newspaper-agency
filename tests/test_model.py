@@ -1,6 +1,6 @@
 from django.test import TestCase
 
-from newspaper.models import Redactor
+from newspaper.models import Redactor, Topic
 
 
 class TestModel(TestCase):
@@ -29,4 +29,8 @@ class TestModel(TestCase):
         self.assertEqual(redactor.username, username)
         self.assertTrue(redactor.check_password(password))
         self.assertEqual(redactor.years_of_experience, years_of_experience)
+
+    def test_topic_str(self) -> None:
+        topic = Topic.objects.create(topic="test")
+        self.assertEqual(str(topic), f"{topic.topic}")
 
