@@ -1,4 +1,5 @@
 from django.contrib.auth import get_user_model
+from django.contrib.auth.models import User
 from django.test import TestCase
 from django.urls import reverse
 
@@ -23,3 +24,22 @@ class PrivateTopicTests(TestCase):
             list(response.context["topic_list"]),
             list(topic)
         )
+        self.assertTemplateUsed(response, "newspaper/newspaper_list.html")
+
+
+class PublicTopicTaste(TestCase):
+
+    def test_public_presentation_page_topic_list(self):
+        response = self.client.get(
+            reverse("taxi:topic-list")
+        )
+        self.assertNotEqual(response.status_code, 200)
+
+
+class PublicNewspaperTaste(TestCase):
+
+    def test_public_presentation_page_newspaper_list(self) -> None:
+        response = self.client.get(
+            reverse("newspaper:newspaper-list")
+        )
+        self.assertNotEqual(response.status_code, 200)
