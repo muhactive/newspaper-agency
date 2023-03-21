@@ -6,7 +6,7 @@ from newspaper.models import Redactor, Topic, Newspaper
 
 class TestModel(TestCase):
 
-    def test_redactor_str(self):
+    def test_redactor_str(self) -> None:
         redactor = Redactor.objects.create_user(
             username="Bob",
             first_name="Luk",
@@ -18,7 +18,7 @@ class TestModel(TestCase):
             f"{redactor.first_name} {redactor.last_name}"
         )
 
-    def test_redactor_has_years_of_experience(self):
+    def test_redactor_has_years_of_experience(self) -> None:
         username = "Lilu"
         password = "123456789lilu"
         years_of_experience = 2
