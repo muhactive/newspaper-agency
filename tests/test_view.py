@@ -3,7 +3,7 @@ from django.contrib.auth.models import User
 from django.test import TestCase
 from django.urls import reverse
 
-from newspaper.models import Topic, Newspaper
+from newspaper.models import Topic, Newspaper, Redactor
 
 
 class PublicTopicTaste(TestCase):
@@ -78,3 +78,27 @@ class TestPublicListRedactor(TestCase):
     def test_login_required(self) -> None:
         response = self.client.get(reverse("newspaper:redactor-list"))
         self.assertNotEqual(response.status_code, 200)
+
+
+class TestPrivatListRedactor(TestCase):
+
+    def setUp(self) -> None:
+        self.user = get_user_model().objects.create_user(
+            username="Fofa",
+            password="6546dafadf"
+        )
+        self.client.force_login(self.user)
+
+    def test_private_presentation_redactor_list(self) -> None:
+        Redactor.objects.create_user(
+            username="Hyter",
+            password="rr5a46c46sc"
+        )
+        response = self.client.get(reverse("newspaper:redactor-list"))
+        redactor = Redactor.objects.all()
+
+        self.assertEqual(response.status_code, 200)
+        self.assertEqual(
+            list(response.context["redactor_list"]),
+            list(redactor)
+        )
