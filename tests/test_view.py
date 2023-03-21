@@ -1,5 +1,5 @@
 from django.contrib.auth import get_user_model
-from django.contrib.auth.models import User
+
 from django.test import TestCase
 from django.urls import reverse
 
@@ -8,7 +8,7 @@ from newspaper.models import Topic, Newspaper, Redactor
 
 class PublicTopicTaste(TestCase):
 
-    def test_public_presentation_page_topic_list(self):
+    def test_public_presentation_page_topic_list(self) -> None:
         response = self.client.get(
             reverse("newspaper:topic-list")
         )
@@ -102,3 +102,19 @@ class TestPrivatListRedactor(TestCase):
             list(response.context["redactor_list"]),
             list(redactor)
         )
+
+    def test_create_redactor(self) -> None:
+        form_redactor = {
+            "username": "Jo",
+            "password1": "rrr4646464646",
+            "password2": "rrr4646464646",
+            "first_name": "Fil",
+            "last_name": "Nevil"
+        }
+        url = reverse("newspaper:redactor-create")
+        self.client.post(url, data=form_redactor)
+
+        test_redactor = get_user_model().objects.get(
+            username=form_redactor["username"]
+        )
+        self.assertEqual(test_redactor.first_name, form_redactor["first_name"])
