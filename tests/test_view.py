@@ -3,7 +3,7 @@ from django.contrib.auth.models import User
 from django.test import TestCase
 from django.urls import reverse
 
-from newspaper.models import Topic
+from newspaper.models import Topic, Newspaper
 
 
 class PublicTopicTaste(TestCase):
@@ -43,3 +43,32 @@ class PrivateTopicTests(TestCase):
             list(topic)
         )
         self.assertTemplateUsed(response, "newspaper/topic_list.html")
+
+
+class PrivateNewspaperTests(TestCase):
+
+    def setUp(self) -> None:
+        self.user = get_user_model().objects.create(
+            username="Al",
+            password="5454646asdfasd"
+        )
+        self.client.force_login(self.user)
+
+    def test_private_presentation_newspaper_list(self) -> None:
+        topic = Topic.objects.create(topic="Police")
+        Newspaper.objects.create(
+            topic=topic,
+            title="TEstTitle",
+            content="testetestetstetetss",
+        )
+
+        newspaper = Newspaper.objects.all()
+        response = self.client.get(
+            reverse("newspaper:newspaper-list")
+        )
+        self.assertEqual(response.status_code, 200)
+        self.assertEqual(
+            list(response.context["newspaper_list"]),
+            list(newspaper)
+        )
+
