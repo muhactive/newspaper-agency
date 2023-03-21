@@ -29,9 +29,16 @@ class PrivateTopicTests(TestCase):
 
 class PublicTopicTaste(TestCase):
 
+    def setUp(self) -> None:
+        self.user = get_user_model().objects.create(
+            username="user",
+            password="12345password"
+        )
+        self.client.force_login(self.user)
+
     def test_public_presentation_page_topic_list(self):
         response = self.client.get(
-            reverse("taxi:topic-list")
+            reverse("newspaper:topic-list")
         )
         self.assertNotEqual(response.status_code, 200)
 
