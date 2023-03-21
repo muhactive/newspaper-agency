@@ -72,3 +72,9 @@ class PrivateNewspaperTests(TestCase):
             list(newspaper)
         )
 
+
+class TestPublicListRedactor(TestCase):
+
+    def test_login_required(self) -> None:
+        response = self.client.get(reverse("newspaper:redactor-list"))
+        self.assertNotEqual(response.status_code, 200)
