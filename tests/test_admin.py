@@ -18,12 +18,12 @@ class AdminSiteTests(TestCase):
             years_of_experience=2
         )
 
-    def test_admin_page_has_years_of_experience(self):
+    def test_admin_page_has_years_of_experience(self) -> None:
         url = reverse("admin:newspaper_redactor_changelist")
         response = self.client.get(url)
         self.assertContains(response, self.redactor.years_of_experience)
 
-    def test_admin_page_fieldsets_has_years_of_experience(self):
+    def test_admin_page_fieldsets_has_years_of_experience(self) -> None:
         url = reverse("admin:newspaper_redactor_change", args={self.redactor.id})
         response = self.client.get(url)
         self.assertContains(response, self.redactor.years_of_experience)

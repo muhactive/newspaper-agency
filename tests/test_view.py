@@ -14,7 +14,7 @@ class PrivateTopicTests(TestCase):
         )
         self.client.force_login(self.user)
 
-    def test_private_presentation_topic_list(self):
+    def test_private_presentation_topic_list(self) -> None:
         Topic.objects.create(topic="UPG")
         topic = Topic.objects.all()
         response = self.client.get(reverse("newspaper:topic-list"))
