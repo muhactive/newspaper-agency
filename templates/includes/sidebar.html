@@ -1,13 +1,36 @@
-<ul class="sidebar-nav">
-    {% if user.is_authenticated %}
-        <li>Redactor: {{user.username}} ({{user.first_name}})</li>
-        <li><a href="{% url 'logout' %}">Logout</a></li>
-    {% else %}
-        <li><a href="{% url 'login' %}">Login</a></li>
-    {% endif %}
-    <br>
-    <li><a href="{% url 'newspaper:index' %}">Home page</a></li>
-    <li><a href="{% url 'newspaper:topic-list' %}">Topic</a></li>
-    <li><a href="{% url 'newspaper:redactor-list' %}">Redactor</a></li>
-    <li><a href="{% url 'newspaper:newspaper-list' %}">Newspaper</a></li>
-</ul>
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <div class="container-fluid">
+    <ul class="navbar-nav ml-auto">
+        {% if user.is_authenticated %}
+      <li class="nav-item">
+        <a class="nav-link active" href="{% url 'newspaper:redactor-detail' pk=user.id %}">
+            Redactor: {{user.username}} ({{user.first_name}})</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'logout' %}">Logout</a>
+      </li>
+        {% endif %}
+
+    </ul>
+    <div class="ml-auto">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link me-4" href="{% url 'newspaper:index' %}">Home</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link me-4" href="{% url 'newspaper:topic-list' %}">Topic</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link me-4" href="{% url 'newspaper:redactor-list' %}">Redactor</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link me-2" href="{% url 'newspaper:newspaper-list' %}">Newspaper</a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
