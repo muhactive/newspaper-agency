@@ -1,14 +1,24 @@
 {% extends "base.html" %}
-
+{% load static %}
 {% block content %}
-<h1>Newspaper Agency Home</h1>
-<h4>Welcome to Newspaper agency</h4>
-<hr>
-<h3>Newspaper agency content</h3>
-<ul>
-  <li>Number of Topic: {{ count_topic }}</li>
-  <li>Number of Redactors: {{ count_redactor }}</li>
-  <li>Number of Newspaper: {{ count_newspaper }}</li>
-</ul>
-<p>You have visited this page {{ num_visit }} time{{ num_visit|pluralize }} </p>
+<div class="container">
+  <div class="row">
+    <div class="col-md-5">
+      <img class="home-image" src="{% static 'images/typewriter.png' %}">
+    </div>
+    <div class="col-md-7">
+      <h1 class="text-center">Newspaper Agency Home</h1>
+      <h4 class="text-center">Welcome to Newspaper agency</h4>
+      <hr>
+      <h3 class="text-center">Newspaper agency content</h3>
+      <br>
+      <ul>
+        <li>Number of Topic: {{ count_topic }}</li>
+        <li>Number of Redactors: {{ count_redactor }}</li>
+        <li>Number of Newspaper: {{ count_newspaper }}</li>
+      </ul>
+      <p>You have visited this page {{ num_visit }} time{{ num_visit|pluralize }} </p>
+    </div>
+  </div>
+</div>
 {% endblock %}
