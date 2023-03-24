@@ -68,3 +68,16 @@
   z-index: 2;
   color: black;
 }
+
+.footer {
+  background-color: #C0C0C0;
+  background-size: cover;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+}
+
+.content  {
+  background-color: #DCDCDC;
+}

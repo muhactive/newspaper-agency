@@ -5,7 +5,7 @@
     <ul class="navbar-nav ml-auto">
         {% if user.is_authenticated %}
       <li class="nav-item">
-        <a class="nav-link" href="#"><img class="image-admin" src="{% static 'images/admin_logo.png' %}"></a>
+        <a class="nav-link" href="#"><img class="image-admin" src="{% static 'images/typewriter.png' %}"></a>
       </li>
       <li class="nav-item">
         <a class="nav-link active" href="{% url 'newspaper:redactor-detail' pk=user.id %}">
