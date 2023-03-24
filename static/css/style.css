@@ -49,7 +49,7 @@
 
 .sidebar {
   position: relative;
-  background-image: url('/static/images/sidebar.jpeg');
+  background-image: url('/static/images/sidebar_white.jpeg');
   background-size: cover;
 }
 
@@ -60,7 +60,6 @@
   left: 0;
   width: 100%;
   height: 100%;
-   background-color: rgba(0, 0, 0, 0.1);
   z-index: 1;
 }
 
