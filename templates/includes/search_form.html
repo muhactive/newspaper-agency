@@ -1,7 +1,26 @@
 {% load crispy_forms_filters %}
-<div>
-  <form action="" method="GET">
-    {{ search_form|crispy }}
-    <button class="btn btn-outline-secondary" type="submit">Search</button>
-  </form>
+<div class="container">
+  <div class="row">
+    <div class="col-md-10">
+      <form action="" method="GET">
+        <div class="input-group">
+          {{ search_form|crispy }}
+          <button class="btn btn-outline-secondary btn-search" type="submit">Search 🔍</button>
+        </div>
+      </form>
+    </div>
+    <div class="col-md-2"></div>
+  </div>
 </div>
+
+<!--<div class="container">-->
+<!--  <div class="row">-->
+<!--    <div class="col-md-3">-->
+<!--      <form action="" method="GET">-->
+<!--        {{ search_form|crispy }}-->
+<!--        <button class="btn btn-outline-secondary" type="submit">Search</button>-->
+<!--      </form>-->
+<!--     <div class="col-md-9"></div>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</div>-->

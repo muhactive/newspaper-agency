@@ -82,3 +82,11 @@
   flex-direction: column;
   min-height: 100vh;
 }
+
+footer {
+    margin-top: auto;
+}
+
+.btn-search {
+    height: 37px;
+}

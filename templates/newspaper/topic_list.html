@@ -1,12 +1,21 @@
 {% extends "base.html" %}
-
+{% load static %}
 {% block content %}
-  <h1> Topics List</h1>
-  <br>
-  {% if topic_list %}
-    {% block search_form %}
-      {% include "includes/search_form.html" %}
-    {% endblock %}
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-5">
+        <br>
+        {% if topic_list %}
+          {% block search_form %}
+          {% include "includes/search_form.html" %}
+        {% endblock %}
+
+        <img class="home-image" src="{% static 'images/typewriter.png' %}">
+      </div>
+      <div class="col-md-7">
+        <h1 class="text-center"> Topic List</h1>
+        <p><a class="btn btn-secondary" href="{% url 'newspaper:topic-create' %}">Create new <strong>Topic</strong></a></p>
     <table class="table">
       <tr>
         <th>Id</th>
@@ -19,7 +28,7 @@
       <td>{{ topic.id }}</td>
       <td>{{ topic.topic }}</td>
       <td>
-        <a class="text-info" href="{% url 'newspaper:topic-update' pk=topic.id %}">Update</a>
+        <a class="text-secondary" href="{% url 'newspaper:topic-update' pk=topic.id %}">Update</a>
       </td>
       <td>
         <a class="text-danger" href="{% url 'newspaper:topic-delete' pk=topic.id %}">Delete</a>
@@ -27,8 +36,15 @@
     </tr>
     {% endfor %}
     </table>
+        {% block pagination %}
+          {% include "includes/pagination.html" %}
+        {% endblock %}
   {% else %}
     <p>There are no topic in this page now, but you can create first topic</p>
   {% endif %}
   <p><a class="btn btn-secondary" href="{% url 'newspaper:topic-create' %}">Create new <strong>Topic</strong></a></p>
+        </div>
+    </div>
+  </div>
 {% endblock %}
+
