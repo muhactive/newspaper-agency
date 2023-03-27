@@ -11,13 +11,22 @@
       <h4 class="text-center">Welcome to Newspaper agency</h4>
       <hr>
       <h3 class="text-center">Newspaper agency content</h3>
+      <h6 class="text-center">In our agency we have:</h6>
       <br>
-      <ul>
-        <li>Number of Topic: {{ count_topic }}</li>
-        <li>Number of Redactors: {{ count_redactor }}</li>
-        <li>Number of Newspaper: {{ count_newspaper }}</li>
-      </ul>
-      <p>You have visited this page {{ num_visit }} time{{ num_visit|pluralize }} </p>
+        <div class="row">
+          <div class="col-md-4">
+            <h4 class="text-center">TOPIC</h4>
+            <h1 class="text-center">{{ count_topic }}</h1>
+          </div>
+          <div class="col-md-4">
+            <h4 class="text-center">REDACTOR</h4>
+            <h1 class="text-center">{{ count_redactor }}</h1>
+          </div>
+          <div class="col-md-4">
+            <h4 class="text-center">Newspaper</h4>
+            <h1 class="text-center">{{ count_newspaper }}</h1>
+          </div>
+        </div>
       <hr>
       <p>When we ask you to submit the quantitative queries that fuel the machinery here at the Department of Data, we often toss out a few questions to prime the pump. Recently, we mused about the political leanings of people who go on cruises. It struck a nerve. More than a few of you implored us to answer.
 
@@ -28,6 +37,8 @@ Hmm. Is that right? Do cruises and all-inclusive resorts really attract a predom
 Ordinarily, we wouldn’t consider any one mode of travel particularly political. But someone brought to our attention a newsletter writer who characterized Democrats as “snobs” who look down on anyone who “goes on cruises or to all-inclusive resorts.”
 
 Hmm. Is that right? Do cruises and all-inclusive resorts really attract a predominantly Republican clientele?</p>
+      <hr>
+        <p>You have visited this page <strong>{{ num_visit }}</strong> time{{ num_visit|pluralize }}</p>
     </div>
   </div>
 </div>
