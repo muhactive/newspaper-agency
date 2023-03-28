@@ -1,12 +1,20 @@
 {% extends "base.html" %}
-
+{% load static %}
 {% block content %}
-  <h1>Newspapers List</h1>
-  <br>
+
+<div class="container">
+    <div class="row">
+      <div class="col-md-5">
+        <br>
   {% if newspaper_list %}
     {% block search_form %}
       {% include "includes/search_form.html" %}
     {% endblock %}
+        <img class="home-image" src="{% static 'images/news.png' %}">
+      </div>
+      <div class="col-md-5">
+        <h1 class="text-center">Newspaper List</h1>
+        <p><a class="btn btn-secondary" href="{% url 'newspaper:newspaper-create' %}">Create new <strong>Newspaper</strong></a></p>
     {% for newspaper in newspaper_list %}
       <ul>
         <li><a href="{% url 'newspaper:newspaper-detail' pk=newspaper.id %}">{{ newspaper.title }}
@@ -14,8 +22,14 @@
         <hr>
       </ul>
     {% endfor %}
+        {% block pagination %}
+          {% include "includes/pagination.html" %}
+        {% endblock %}
   {% else %}
     <p>There are no <strong>newspaper</strong> now, but you cat create new newspaper</p>
   {% endif %}
-  <p><a class="btn btn-secondary" href="{% url 'newspaper:newspaper-create' %}">Create new <strong>Newspaper</strong></a></p>
+      </div>
+      <div class="col-md-2"></div>
+    </div>
+</div>
 {% endblock %}
