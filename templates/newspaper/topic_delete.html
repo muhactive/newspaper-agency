@@ -1,11 +1,28 @@
 {% extends "base.html" %}
-
+{% load static %}
 {% block content %}
-  <h2>Delete Topic</h2>
-<p>Are you sure that you want to delete this: <strong>{{ topic }}</strong></p>
-  <form action="" method="post">
-    {% csrf_token %}
-    <input class="btn btn-danger" type="submit" value="Delete">
-    <input class="btn btn-secondary" type="button" value="No" onclick="window.history.back();">
-  </form>
-{% endblock %}
+<div class="container">
+    <div class="row">
+      <div class="col-md-5">
+        <br>
+        <img class="home-image" src="{% static 'images/delete.png' %}">
+      </div>
+      <div class="col-md-7">
+        <br>
+        <h2 class="text-center">Delete Topic</h2>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h4 class="text-center">Are you sure that you want to delete this: <strong>{{ topic }}</strong></h4>
+        <br>
+        <br>
+        <form class="text-center" action="" method="post">
+          {% csrf_token %}
+          <input class="btn btn-danger" type="submit" value="Delete">
+          <input class="btn btn-secondary" type="button" value="No" onclick="window.history.back();">
+        </form>
+      </div>
+    </div>
+</div>
+{% endblock %}>
