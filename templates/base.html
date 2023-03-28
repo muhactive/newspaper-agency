@@ -13,31 +13,24 @@
 </head>
   <body>
     <div class="page">
-      <!-- Header -->
       <div class="p-5 text-center background-picture">
         <h1 class="new-text">Newspaper Agency</h1>
         <p class="new-text">Democracy Dies in Darkness</p>
       </div>
       <main>
-        <!-- &&& -->
         {% block sidebar %}
           {% include "includes/sidebar.html" %}
         {% endblock %}
 
         {% block content %}
         {% endblock %}
-
-<!--        {% block pagination %}-->
-<!--          {% include "includes/pagination.html" %}-->
-<!--        {% endblock %}-->
       </main>
-      <!--Footer -->
+
       <footer class="mt-5 p-4 bg-dark text-white text-center">
         <p>®️ created by Mukha Alexander 2023</p>
         <p>email: muhactive@gmail.com</p>
         <p>Telegram: @Muha_Alex </p>
       </footer>
-    <!-- &&& -->
     </div>
   </body>
 </html>

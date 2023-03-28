@@ -1,52 +1,61 @@
 {% extends "base.html" %}
-
+{% load static %}
 {% block content %}
-    <h2 class="text-capitalize">redactor detail page</h2>
-    <hr>
-    <p>Here you can see more detailed information about the redactor</p>
-    <dl class="dl-horizontal">
 
-      <dt class="text-muted">ID:</dt>
-      <dd class="text-muted"> {{ redactor_detail.id}}</dd>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-5">
+        <br>
+        <img class="home-image" src="{% static 'images/redactor_detail.png' %}">
+      </div>
+      <div class="col-md-7">
+      <h2 class="text-center">Redactor Detail Page</h2>
+      <hr>
+      <h5 class="text-center">Here you can see more detailed information about the redactor</h5>
+        <br>
+      <dl class="dl-horizontal">
 
-      <dt>Username:</dt>
-      <dd> {{ redactor_detail.username }}</dd>
+        <dt class="text-muted">ID:</dt>
+        <dd class="text-muted"> {{ redactor_detail.id}}</dd>
 
-      <dt>First Name:</dt>
-      {% if redactor_detail.first_name  %}
-      <dd> {{ redactor_detail.first_name }}</dd>
-      {% else %}
-      <dd class="text-danger"> No information about <strong>First name</strong></dd>
-      {% endif %}
+        <dt>Username:</dt>
+        <dd> {{ redactor_detail.username }}</dd>
 
-      <dt>Last Name:</dt>
-      {% if redactor_detail.last_name %}
-      <dd> {{ redactor_detail.last_name }}</dd>
-      {% else %}
-      <dd class="text-danger"> No information about <strong>Last name</strong></dd>
-      {% endif %}
+        <dt>First Name:</dt>
+        {% if redactor_detail.first_name  %}
+        <dd> {{ redactor_detail.first_name }}</dd>
+        {% else %}
+        <dd class="text-danger"> No information about <strong>First name</strong></dd>
+        {% endif %}
 
-      <dt>Email:</dt>
-      {% if redactor_detail.email %}
-      <dd> {{ redactor_detail.email }}</dd>
-      {% else %}
-      <dd class="text-danger"> No information about <strong>email</strong></dd>
-      {% endif %}
+        <dt>Last Name:</dt>
+        {% if redactor_detail.last_name %}
+        <dd> {{ redactor_detail.last_name }}</dd>
+        {% else %}
+        <dd class="text-danger"> No information about <strong>Last name</strong></dd>
+        {% endif %}
 
-      <dt>Years of experience:</dt>
-      {% if redactor_detail.years_of_experience %}
-      <dd> {{ redactor_detail.years_of_experience }}</dd>
-      {% else %}
-      <dd class="text-danger"> No information about <strong>years of experience</strong></dd>
-      {% endif %}
+        <dt>Email:</dt>
+        {% if redactor_detail.email %}
+        <dd> {{ redactor_detail.email }}</dd>
+        {% else %}
+        <dd class="text-danger"> No information about <strong>email</strong></dd>
+        {% endif %}
 
-      <dt>Wrote articles in:</dt>
-      {% for newspaper in redactor_detail.newspaper.all %}
-      <dd> {{ newspaper.title }}</dd>
-      {% empty %}
-      <dd class="text-danger"> No information</dd>
-      {% endfor %}
-      <a class="btn btn-secondary" href="{% url 'newspaper:redactor-update' pk=redactor_detail.id %}">Update</a>
-      <a class="btn btn-danger" href="{% url 'newspaper:redactor-delete' pk=redactor_detail.id %}">Delete</a>
-    </dl>
+        <dt>Years of experience:</dt>
+        {% if redactor_detail.years_of_experience %}
+        <dd> {{ redactor_detail.years_of_experience }}</dd>
+        {% else %}
+        <dd class="text-danger"> No information about <strong>years of experience</strong></dd>
+        {% endif %}
+
+        <dt>Wrote articles in:</dt>
+        {% for newspaper in redactor_detail.newspaper.all %}
+        <dd> {{ newspaper.title }}</dd>
+        {% empty %}
+        <dd class="text-danger"> No information</dd>
+        {% endfor %}
+        <a class="btn btn-secondary" href="{% url 'newspaper:redactor-update' pk=redactor_detail.id %}">Update</a>
+        <a class="btn btn-danger" href="{% url 'newspaper:redactor-delete' pk=redactor_detail.id %}">Delete</a>
+      </dl>
 {% endblock %}
