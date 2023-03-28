@@ -11,7 +11,7 @@
           {% include "includes/search_form.html" %}
         {% endblock %}
 
-        <img class="home-image" src="{% static 'images/typewriter.png' %}">
+        <img class="home-image" src="{% static 'images/newspaper.png' %}">
       </div>
       <div class="col-md-7">
         <h1 class="text-center"> Topic List</h1>
@@ -42,7 +42,6 @@
   {% else %}
     <p>There are no topic in this page now, but you can create first topic</p>
   {% endif %}
-  <p><a class="btn btn-secondary" href="{% url 'newspaper:topic-create' %}">Create new <strong>Topic</strong></a></p>
         </div>
     </div>
   </div>

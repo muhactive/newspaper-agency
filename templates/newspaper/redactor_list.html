@@ -1,14 +1,20 @@
 {% extends "base.html" %}
-
+{% load static %}
 {% block content %}
-  <h1>Redactors List</h1>
-  <br>
 
+<div class="container">
+    <div class="row">
+      <div class="col-md-5">
+        <br>
   {% if redactor_list %}
   {% block search_form %}
     {% include "includes/search_form.html" %}
   {% endblock %}
-
+ <img class="home-image" src="{% static 'images/redactor.png' %}">
+      </div>
+      <div class="col-md-7">
+        <h1 class="text-center">Redactors List</h1>
+          <p><a class="btn btn-secondary" href="{% url 'newspaper:redactor-create' %}">Create new <strong>redactor</strong></a> </p>
     <table class="table">
       <tr>
         <th>Id</th>
@@ -27,7 +33,12 @@
         </tr>
 
     {% endfor %}
-      </table>
+    </table>
+        {% block pagination %}
+          {% include "includes/pagination.html" %}
+        {% endblock %}
   {% endif %}
-  <p><a class="btn btn-secondary" href="{% url 'newspaper:redactor-create' %}">Create new <strong>redactor</strong></a> </p>
+      </div>
+    </div>
+</div>
 {% endblock %}
