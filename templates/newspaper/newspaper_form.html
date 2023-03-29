@@ -1,11 +1,30 @@
 {% extends "base.html" %}
 {% load crispy_forms_filters %}
-
+{% load static %}
 {% block content %}
-  <h1>{{ object|yesno:"Update, Create new" }} Newspaper</h1>
-  <form action="" method="post" novalidate>
-    {% csrf_token %}
-    {{ form|crispy }}
-    <input class="btn btn-primary" type="Submit" value="{{ object|yesno:'Update, Create' }}">
-  </form>
+<h1 class="text-center">{{ object|yesno:"Update, Create new" }} Newspaper</h1>
+<br>
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <form action="" method="post" novalidate>
+        {% csrf_token %}
+        {{ form|crispy }}
+        <input class="btn btn-primary" type="Submit" value="{{ object|yesno:'Update, Create' }}">
+      </form>
+    </div>
+
+    <div class="col-md-3">
+      <img class="home-image" src="{% static 'images/create_newspaper.png' %}">
+    </div>
+
+    <div class="col-md-3">
+      <br>
+      <br>
+      <br>
+      <br>
+      <img class="home-image" src="{% static 'images/create_newspaper.png' %}">
+    </div>
+  </div>
+</div>
 {% endblock %}
