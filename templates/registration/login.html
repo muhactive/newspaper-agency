@@ -1,15 +1,25 @@
 {% extends "base.html" %}
 {% load crispy_forms_filters %}
-
+{% load static %}
 {% block content %}
-  <h1>Login</h1>
+<h1 class="text-center">Login</h1>
+<br>
   {% if form.errors %}
-    <p class="text-danger">Invalid credentials!</p>
+    <p class="text-danger text-center">Invalid credentials!</p>
   {% endif %}
-  <form method="post" action="{% url 'login' %}">
-    {% csrf_token %}
-    {{ form|crispy }}
-    <input class="btn btn-primary" type="submit" value="Login">
-    <input type="hidden" name="next" value="{{ next }}">
-  </form>
+<div class="container">
+  <div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-6">
+      <form method="post" action="{% url 'login' %}">
+        {% csrf_token %}
+        {{ form|crispy }}
+        <input class="btn btn-primary" type="submit" value="Login">
+        <input type="hidden" name="next" value="{{ next }}">
+      </form>
+      <p class="text-center"><img class="home-image" src="{% static 'images/login.png' %}"></p>
+    </div>
+    <div class="col-md-3"></div>
+  </div>
+</div>
 {% endblock %}
