@@ -33,8 +33,8 @@ python manage.py runserver
 
 # Demo
 
-![login.png](venv%2Flogin.png)
-![home.png](venv%2Fhome.png)
-![delete.png](venv%2Fdelete.png)
-![create_redactor.png](venv%2Fcreate_redactor.png)
-![redactor_detail.png](venv%2Fredactor_detail.png)
+![readme_login.png](static%2Fimages%2Freadme_login.png)
+![readme_home.png](static%2Fimages%2Freadme_home.png)
+![readme_redactor_detail.png](static%2Fimages%2Freadme_redactor_detail.png)
+![readme_create_redactor.png](static%2Fimages%2Freadme_create_redactor.png)
+![readme_delete.png](static%2Fimages%2Freadme_delete.png)
