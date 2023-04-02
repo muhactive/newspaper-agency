@@ -7,6 +7,13 @@ in a proper way. For that purpose you decided to create a system
 for tracking Redactors, assigned to Newspapers.
 So you will always know, who were the publishers of each Newspaper.
 
+# Try it
+Use the following user to log in and check the functionality of the website:
+```
+Username: admin
+Password: passwordadmin
+```
+
 # Check it out
 
 [Newspaper Agency project deployed to Heroku](Link_will_be_here)
@@ -20,8 +27,15 @@ cd newspaper-agency
 python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
+python manage.py migrare
 python manage.py runserver
 ```
+# Secret Key
+In main folder you'll find a file .env_sample.
+In this file an example of SECRET_KEY is stored,
+required for the project.
+You may need create a file .env 
+and write here you secret key as in example.
 
 # Features
 
@@ -30,6 +44,9 @@ python manage.py runserver
 * Search function and pagination
 * Powerful admin panel for advanced managing
 * Login/Logout
+
+# DB Structure
+![db_structure.png](static%2Fimages%2Fdb_structure.png)
 
 # Demo
 
