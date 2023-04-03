@@ -10,7 +10,7 @@ from newspaper.forms import (
     CreateNewspaperForm,
     RedactorSearchForm,
     NewspaperSearchForm,
-    TopicSearchForm
+    TopicSearchForm, UpdateRedactorForm
 )
 from newspaper.models import (
     Topic,
@@ -78,7 +78,7 @@ class RedactorCreateView(LoginRequiredMixin, generic.CreateView):
 
 class RedactorUpdateView(LoginRequiredMixin, generic.UpdateView):
     model = Redactor
-    form_class = CreateRedactorForm
+    form_class = UpdateRedactorForm
     template_name = "newspaper/redactor_form.html"
 
     def get_success_url(self) -> dict:
