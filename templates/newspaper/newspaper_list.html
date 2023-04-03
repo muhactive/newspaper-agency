@@ -27,7 +27,9 @@
         {% endblock %}
   {% else %}
     <p>There are no <strong>newspaper</strong> now, but you can create new newspaper</p>
-    <p><a class="btn btn-secondary" href="{% url 'newspaper:newspaper-create' %}">Create new <strong>Newspaper</strong></a></p>
+    <p>
+      <a class="btn btn-secondary" href="{% url 'newspaper:newspaper-create' %}">Create new <strong>Newspaper</strong></a>
+    </p>
         <img class="home-image" src="{% static 'images/news.png' %}">
   {% endif %}
       </div>

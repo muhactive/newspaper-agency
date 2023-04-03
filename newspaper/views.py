@@ -10,7 +10,8 @@ from newspaper.forms import (
     CreateNewspaperForm,
     RedactorSearchForm,
     NewspaperSearchForm,
-    TopicSearchForm, UpdateRedactorForm
+    TopicSearchForm,
+    UpdateRedactorForm
 )
 from newspaper.models import (
     Topic,

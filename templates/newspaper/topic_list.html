@@ -41,11 +41,12 @@
         {% endblock %}
   {% else %}
     <p>There are no topic in this page now, but you can create first topic</p>
-    <p><a class="btn btn-secondary" href="{% url 'newspaper:topic-create' %}">Create new <strong>Topic</strong></a></p>
+    <p>
+      <a class="btn btn-secondary" href="{% url 'newspaper:topic-create' %}">Create new <strong>Topic</strong></a>
+    </p>
         <img class="home-image" src="{% static 'images/newspaper.png' %}">
   {% endif %}
         </div>
     </div>
   </div>
 {% endblock %}
-

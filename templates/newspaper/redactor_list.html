@@ -39,7 +39,9 @@
         {% endblock %}
     {% else %}
       <p>There are no <strong>redactors</strong> now, but you can create new redactor</p>
-      <p><a class="btn btn-secondary" href="{% url 'newspaper:redactor-create' %}">Create new <strong>redactor</strong></a> </p>
+      <p>
+        <a class="btn btn-secondary" href="{% url 'newspaper:redactor-create' %}">Create new <strong>redactor</strong></a>
+      </p>
       <img class="home-image" src="{% static 'images/redactor.png' %}">
   {% endif %}
       </div>
