@@ -1,0 +1,1228 @@
+[
+  {
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+      "action_time": "2023-03-09T15:46:45.480Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "1",
+      "object_repr": "Politics",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+      "action_time": "2023-03-09T15:47:04.243Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "2",
+      "object_repr": "Crime",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+      "action_time": "2023-03-09T15:47:17.183Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "3",
+      "object_repr": "Bussines",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+      "action_time": "2023-03-09T15:47:27.039Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "4",
+      "object_repr": "Art.",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+      "action_time": "2023-03-09T15:47:33.033Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "5",
+      "object_repr": "Sport",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+      "action_time": "2023-03-09T15:47:43.720Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "6",
+      "object_repr": "Trade",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+      "action_time": "2023-03-09T15:47:49.577Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "7",
+      "object_repr": "Weather",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+      "action_time": "2023-03-09T16:55:31.581Z",
+      "user": 1,
+      "content_type": 6,
+      "object_id": "1",
+      "object_repr": "Alex Bold",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\", \"Years of experience\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 9,
+    "fields": {
+      "action_time": "2023-03-09T16:56:02.299Z",
+      "user": 1,
+      "content_type": 6,
+      "object_id": "2",
+      "object_repr": "Ilya Fud",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\", \"Years of experience\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 10,
+    "fields": {
+      "action_time": "2023-03-09T16:56:43.905Z",
+      "user": 1,
+      "content_type": 6,
+      "object_id": "3",
+      "object_repr": "Helen Virgy",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 11,
+    "fields": {
+      "action_time": "2023-03-09T16:57:30.965Z",
+      "user": 1,
+      "content_type": 6,
+      "object_id": "4",
+      "object_repr": "Galina Wolf",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 12,
+    "fields": {
+      "action_time": "2023-03-09T16:58:07.894Z",
+      "user": 1,
+      "content_type": 6,
+      "object_id": "5",
+      "object_repr": "Sam Samson",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 13,
+    "fields": {
+      "action_time": "2023-03-09T16:58:56.879Z",
+      "user": 1,
+      "content_type": 6,
+      "object_id": "6",
+      "object_repr": "Hary Lupen",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 14,
+    "fields": {
+      "action_time": "2023-03-09T16:59:41.992Z",
+      "user": 1,
+      "content_type": 6,
+      "object_id": "7",
+      "object_repr": "Nik Biber",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 15,
+    "fields": {
+      "action_time": "2023-03-09T16:59:57.030Z",
+      "user": 1,
+      "content_type": 6,
+      "object_id": "7",
+      "object_repr": "Nik Biber",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Email address\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 16,
+    "fields": {
+      "action_time": "2023-03-09T17:00:43.206Z",
+      "user": 1,
+      "content_type": 6,
+      "object_id": "8",
+      "object_repr": "Nudi Volt",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 17,
+    "fields": {
+      "action_time": "2023-03-09T17:00:53.393Z",
+      "user": 1,
+      "content_type": 6,
+      "object_id": "8",
+      "object_repr": "Nudi Volt",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Email address\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 18,
+    "fields": {
+      "action_time": "2023-03-09T17:01:31.809Z",
+      "user": 1,
+      "content_type": 6,
+      "object_id": "9",
+      "object_repr": "Lilu Dalas",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 19,
+    "fields": {
+      "action_time": "2023-03-09T17:01:45.408Z",
+      "user": 1,
+      "content_type": 6,
+      "object_id": "9",
+      "object_repr": "Lilu Dalas",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Email address\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 20,
+    "fields": {
+      "action_time": "2023-03-09T17:03:48.456Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "1",
+      "object_repr": "newspaper.Redactor.None wrote New Yourk Times on (09-03-2023 17:03:48)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 21,
+    "fields": {
+      "action_time": "2023-03-09T17:42:16.750Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "2",
+      "object_repr": "newspaper.Redactor.None wrote Washington Post on (09-03-2023 17:42:16)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 22,
+    "fields": {
+      "action_time": "2023-03-09T17:43:17.825Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "3",
+      "object_repr": "newspaper.Redactor.None wrote test on (09-03-2023 17:43:17)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 23,
+    "fields": {
+      "action_time": "2023-03-09T17:44:35.777Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "4",
+      "object_repr": "newspaper.Redactor.None wrote Football on (09-03-2023 17:44:35)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 24,
+    "fields": {
+      "action_time": "2023-03-09T17:45:09.327Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "5",
+      "object_repr": "newspaper.Redactor.None wrote TSN on (09-03-2023 17:45:09)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 25,
+    "fields": {
+      "action_time": "2023-03-09T17:45:45.711Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "6",
+      "object_repr": "newspaper.Redactor.None wrote ICTV on (09-03-2023 17:45:45)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 26,
+    "fields": {
+      "action_time": "2023-03-09T17:46:46.088Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "7",
+      "object_repr": "newspaper.Redactor.None wrote CNN_press on (09-03-2023 17:46:46)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 27,
+    "fields": {
+      "action_time": "2023-03-09T17:47:37.422Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "8",
+      "object_repr": "newspaper.Redactor.None wrote NikNews on (09-03-2023 17:47:37)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 1,
+    "fields": {
+      "name": "Can add log entry",
+      "content_type": 1,
+      "codename": "add_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 2,
+    "fields": {
+      "name": "Can change log entry",
+      "content_type": 1,
+      "codename": "change_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 3,
+    "fields": {
+      "name": "Can delete log entry",
+      "content_type": 1,
+      "codename": "delete_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 4,
+    "fields": {
+      "name": "Can view log entry",
+      "content_type": 1,
+      "codename": "view_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 5,
+    "fields": {
+      "name": "Can add permission",
+      "content_type": 2,
+      "codename": "add_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 6,
+    "fields": {
+      "name": "Can change permission",
+      "content_type": 2,
+      "codename": "change_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 7,
+    "fields": {
+      "name": "Can delete permission",
+      "content_type": 2,
+      "codename": "delete_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 8,
+    "fields": {
+      "name": "Can view permission",
+      "content_type": 2,
+      "codename": "view_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 9,
+    "fields": {
+      "name": "Can add group",
+      "content_type": 3,
+      "codename": "add_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 10,
+    "fields": {
+      "name": "Can change group",
+      "content_type": 3,
+      "codename": "change_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 11,
+    "fields": {
+      "name": "Can delete group",
+      "content_type": 3,
+      "codename": "delete_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 12,
+    "fields": {
+      "name": "Can view group",
+      "content_type": 3,
+      "codename": "view_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 13,
+    "fields": {
+      "name": "Can add content type",
+      "content_type": 4,
+      "codename": "add_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 14,
+    "fields": {
+      "name": "Can change content type",
+      "content_type": 4,
+      "codename": "change_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 15,
+    "fields": {
+      "name": "Can delete content type",
+      "content_type": 4,
+      "codename": "delete_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 16,
+    "fields": {
+      "name": "Can view content type",
+      "content_type": 4,
+      "codename": "view_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 17,
+    "fields": {
+      "name": "Can add session",
+      "content_type": 5,
+      "codename": "add_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 18,
+    "fields": {
+      "name": "Can change session",
+      "content_type": 5,
+      "codename": "change_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 19,
+    "fields": {
+      "name": "Can delete session",
+      "content_type": 5,
+      "codename": "delete_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 20,
+    "fields": {
+      "name": "Can view session",
+      "content_type": 5,
+      "codename": "view_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 21,
+    "fields": {
+      "name": "Can add redactor",
+      "content_type": 6,
+      "codename": "add_redactor"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 22,
+    "fields": {
+      "name": "Can change redactor",
+      "content_type": 6,
+      "codename": "change_redactor"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 23,
+    "fields": {
+      "name": "Can delete redactor",
+      "content_type": 6,
+      "codename": "delete_redactor"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 24,
+    "fields": {
+      "name": "Can view redactor",
+      "content_type": 6,
+      "codename": "view_redactor"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 25,
+    "fields": {
+      "name": "Can add topic",
+      "content_type": 7,
+      "codename": "add_topic"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 26,
+    "fields": {
+      "name": "Can change topic",
+      "content_type": 7,
+      "codename": "change_topic"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 27,
+    "fields": {
+      "name": "Can delete topic",
+      "content_type": 7,
+      "codename": "delete_topic"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 28,
+    "fields": {
+      "name": "Can view topic",
+      "content_type": 7,
+      "codename": "view_topic"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 29,
+    "fields": {
+      "name": "Can add newspaper",
+      "content_type": 8,
+      "codename": "add_newspaper"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 30,
+    "fields": {
+      "name": "Can change newspaper",
+      "content_type": 8,
+      "codename": "change_newspaper"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 31,
+    "fields": {
+      "name": "Can delete newspaper",
+      "content_type": 8,
+      "codename": "delete_newspaper"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 32,
+    "fields": {
+      "name": "Can view newspaper",
+      "content_type": 8,
+      "codename": "view_newspaper"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 1,
+    "fields": {
+      "app_label": "admin",
+      "model": "logentry"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 2,
+    "fields": {
+      "app_label": "auth",
+      "model": "permission"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 3,
+    "fields": {
+      "app_label": "auth",
+      "model": "group"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 4,
+    "fields": {
+      "app_label": "contenttypes",
+      "model": "contenttype"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 5,
+    "fields": {
+      "app_label": "sessions",
+      "model": "session"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 6,
+    "fields": {
+      "app_label": "newspaper",
+      "model": "redactor"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 7,
+    "fields": {
+      "app_label": "newspaper",
+      "model": "topic"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 8,
+    "fields": {
+      "app_label": "newspaper",
+      "model": "newspaper"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "6lrd0b1y081wf56nfflcxym1u7vz7j02",
+    "fields": {
+      "session_data": ".eJxVjM0OgyAQhN-Fc0NWXEE99t5nILuAlf5AItpL03cvJh7a48z3zbyFpW2d7VbCYqMXo2jE6bdjcveQduBvlK5ZupzWJbLcFXnQIi_Zh8f5cP8OZipzXYehwyn4jhCg19phU3NvsAcNOBlENJpZMbuKoFGqZQIIA8KgqCWqp2l72lcscRWj-XwB5Vw7tQ:1pjMhs:_SZ6nKK8h0UovLyRyHodke3_A52R2PKRRYwTIFT7jdA",
+      "expire_date": "2023-04-17T16:06:56.628Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "bj84yk6uimxzsh9i5ppbuv8stdor6h35",
+    "fields": {
+      "session_data": ".eJxVjDsOwyAQBe9CHSE-waxdpvcZ0MJCIB8sGTtNlLvHllwk7Zt582YO1yW7tcXZFWIDk-z0u3kM91h3QDes14mHqS5z8XxX-EEbHyeKj8vh_gUytry9NYA0AsDbIFQyBtELBagSJouis0BotLGg-94mq6IATeR16BR1oANs0bo-3au0srBBmvPnC2lOPHU:1pfOR0:6YjOefdNaCBwX8kqb3txwfU6xqSpFIQIjC6Vin0CDlc",
+      "expire_date": "2023-04-06T17:09:06.698Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "d3g76r4hrnow2i5em6o9zjv0pdjewp0l",
+    "fields": {
+      "session_data": ".eJxVjDsOwyAQBe9CHSHMCrN2mT5nQAsLMflgyeA0Ue4eW3KRtG_mzVs4Wtvk1hoXl1mMohOn381TuMeyA75Ruc4yzKUt2ctdkQet8jJzfJwP9y8wUZ22NyB2RiF6G5ROxhB5pZF0omRJ9RaZDBiLMAw2WR0VArOH0GvuEQJu0bI-3SvX3MQI8PkCLSQ8QQ:1pf20A:9qxuP6CaPAlFZCWMWyZbtkcYMwNM4_rYVkfjgDOYOGI",
+      "expire_date": "2023-04-05T17:11:54.463Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "xs2szq26sr09dp1hw4qvi79tuqp1nznh",
+    "fields": {
+      "session_data": ".eJxVjDsOwyAQBe9CHSEMwqxdps8Z0MJCIB8sGUgT5e6xJRdJ-2bevJnF3pLtNaw2E5vZwE6_m0N_D2UHdMNyXbhfSluz47vCD1r5ZaHwOB_uXyBhTdtbAQxaADjjhYxaIzohAWXEaFCMBgi10gbUNJloZBCgiJzyo6QRlIctWvrTvnLNjc3D5wvxGjwM:1pgrC9:qSiaLdjzZZyWuJmOJ5BFJz3NgxNgYWe0ME183RzOsxo",
+      "expire_date": "2023-04-10T18:03:49.797Z"
+    }
+  },
+  {
+    "model": "newspaper.redactor",
+    "pk": 1,
+    "fields": {
+      "password": "pbkdf2_sha256$390000$X670ZNIjHKgD2kDHrMST0M$M1MKytVWufypdjM5kGtfyn4yZJlmKI+8uVDw1T/P7yU=",
+      "last_login": "2023-04-02T18:15:07.256Z",
+      "is_superuser": true,
+      "username": "admin",
+      "first_name": "Alex",
+      "last_name": "Bold",
+      "email": "admin@gmail.com",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2023-03-09T15:09:07Z",
+      "years_of_experience": 3,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "newspaper.redactor",
+    "pk": 2,
+    "fields": {
+      "password": "pbkdf2_sha256$390000$eE3vjUVvUkQTekCEamACU3$7Wwew0/BoHsCelse02UhZj11/6mXBav8w8YPuTtf910=",
+      "last_login": null,
+      "is_superuser": true,
+      "username": "admin_muha",
+      "first_name": "Ilya",
+      "last_name": "Fud",
+      "email": "admin_muha@n.com",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2023-03-09T15:17:00Z",
+      "years_of_experience": 1,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "newspaper.redactor",
+    "pk": 3,
+    "fields": {
+      "password": "pbkdf2_sha256$390000$X2SnaQ0UgFMV4czqnwzxRi$+btEImyYWLEJAbuwq+5fqbP/R9dln61qT0NtdXzYvJo=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "zzz",
+      "first_name": "Helen",
+      "last_name": "Virgy",
+      "email": "",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2023-03-09T16:56:43.698Z",
+      "years_of_experience": 2,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "newspaper.redactor",
+    "pk": 4,
+    "fields": {
+      "password": "pbkdf2_sha256$390000$oeqFeY4u9EfRDyixoP7tRQ$gGxkFIl3L6DZAmW40/GHfGzIa1XlVK3WHD6w6mvZdpk=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "Funy",
+      "first_name": "Galina",
+      "last_name": "Wolf",
+      "email": "",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2023-03-09T16:57:30.759Z",
+      "years_of_experience": 3,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "newspaper.redactor",
+    "pk": 5,
+    "fields": {
+      "password": "pbkdf2_sha256$390000$CYG3jnqXv0NmYqfKmrPC3q$o3Q2ZHvAJw/PVotKbArnw+cEv3Za1QPoYLpxNsp7Ujo=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "Bold",
+      "first_name": "Sam",
+      "last_name": "Samson",
+      "email": "",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2023-03-09T16:58:07.688Z",
+      "years_of_experience": 1,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "newspaper.redactor",
+    "pk": 6,
+    "fields": {
+      "password": "pbkdf2_sha256$390000$7xEaM4dEMK2bxnqDtkKk48$D2HqJKlEKmtTQfTV3qHJHzwWf+5tweKwTFE4GeWvE2A=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "litle_be",
+      "first_name": "Hary",
+      "last_name": "Lupen",
+      "email": "",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2023-03-09T16:58:56.667Z",
+      "years_of_experience": 3,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "newspaper.redactor",
+    "pk": 7,
+    "fields": {
+      "password": "pbkdf2_sha256$390000$mOm4Uvnk1H3L1ZKogA5vxP$ekHI1yv8Oy42NEv7+aSQUEA8iLSFT48bbMCK49/nOA0=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "next",
+      "first_name": "Nik",
+      "last_name": "Biber",
+      "email": "as@as.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2023-03-09T16:59:41Z",
+      "years_of_experience": 1,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "newspaper.redactor",
+    "pk": 8,
+    "fields": {
+      "password": "pbkdf2_sha256$390000$1KJDahQQZCbDFWd88N2axu$BSNhrgu39y0DBxLzLrwSmEHGv2pLcPTJUtduyGR3Cu4=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "Fofa",
+      "first_name": "Nudi",
+      "last_name": "Volt",
+      "email": "ex@d.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2023-03-09T17:00:42Z",
+      "years_of_experience": 5,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "newspaper.redactor",
+    "pk": 9,
+    "fields": {
+      "password": "pbkdf2_sha256$390000$d544GS9OAK9FJvpu0SZjXY$TnJ3o34dP1PlnaPopVFE/98heJsQMosaDS1s42Cu3HM=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "lilu",
+      "first_name": "Lilu",
+      "last_name": "Dalas",
+      "email": "www@q.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2023-03-09T17:01:31Z",
+      "years_of_experience": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "newspaper.redactor",
+    "pk": 11,
+    "fields": {
+      "password": "pbkdf2_sha256$390000$JhfV0T0gmzvDm3raPFEQ7U$9VgrjJqf25FglAym/hEmjlYLDE91dpJwE1g1535DwZk=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "biglittle",
+      "first_name": "Artur",
+      "last_name": "Con",
+      "email": "abcdefg@f.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2023-03-17T18:46:52.120Z",
+      "years_of_experience": 3,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "newspaper.redactor",
+    "pk": 12,
+    "fields": {
+      "password": "",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "33",
+      "first_name": "dfs",
+      "last_name": "dfs",
+      "email": "dfs@cc.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2023-03-17T18:48:08.403Z",
+      "years_of_experience": 3,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "newspaper.redactor",
+    "pk": 13,
+    "fields": {
+      "password": "",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "fff",
+      "first_name": "ffff",
+      "last_name": "fff",
+      "email": "fff@ff.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2023-03-17T18:51:23.376Z",
+      "years_of_experience": 1,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "newspaper.redactor",
+    "pk": 15,
+    "fields": {
+      "password": "pbkdf2_sha256$390000$7Si3scbGTeiX0yLXCRKAGB$T2i1gjxAO1QFEnjeHE1UeDmmSAPsmIItFHx9C0dcYv8=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "Tyrosit",
+      "first_name": "Asfikopli",
+      "last_name": "Sufol",
+      "email": "dort@ff.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2023-03-29T17:27:49.288Z",
+      "years_of_experience": 2,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "newspaper.redactor",
+    "pk": 16,
+    "fields": {
+      "password": "pbkdf2_sha256$390000$VscBgEtvOPsqCVUjGtBPFf$chfldaVddwEOaSBGid5XfwC6nIhFa1JqjTZAtLPKj7I=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "JonFish",
+      "first_name": "Jon",
+      "last_name": "Muzhar",
+      "email": "mad@h.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2023-04-03T16:07:55.574Z",
+      "years_of_experience": 1,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "newspaper.topic",
+    "pk": 15,
+    "fields": {
+      "topic": "sport"
+    }
+  },
+  {
+    "model": "newspaper.topic",
+    "pk": 16,
+    "fields": {
+      "topic": "music"
+    }
+  },
+  {
+    "model": "newspaper.topic",
+    "pk": 17,
+    "fields": {
+      "topic": "cinema"
+    }
+  },
+  {
+    "model": "newspaper.topic",
+    "pk": 18,
+    "fields": {
+      "topic": "politic"
+    }
+  },
+  {
+    "model": "newspaper.topic",
+    "pk": 19,
+    "fields": {
+      "topic": "bussines"
+    }
+  },
+  {
+    "model": "newspaper.topic",
+    "pk": 20,
+    "fields": {
+      "topic": "crime"
+    }
+  },
+  {
+    "model": "newspaper.topic",
+    "pk": 21,
+    "fields": {
+      "topic": "art"
+    }
+  },
+  {
+    "model": "newspaper.topic",
+    "pk": 22,
+    "fields": {
+      "topic": "weather"
+    }
+  },
+  {
+    "model": "newspaper.newspaper",
+    "pk": 14,
+    "fields": {
+      "title": "BBC",
+      "content": "Justice Department and FBI investigators have amassed fresh evidence pointing to possible obstruction by former president Donald Trump in the investigation into top-secret documents found at his Mar-a-Lago home, according to people familiar with the matter.\r\n\r\nThe additional evidence comes as investigators have used emails and text messages from a former Trump aide to help understand key moments last year, said the people, who like others interviewed for this article spoke on the condition of anonymity to discuss an ongoing criminal investigation.\r\n\r\nThe new details highlight the degree to which special counsel Jack Smith’s investigation into the potential mishandling of hundreds of classified national security papers at Trump’s Florida home and private club has come to focus on the obstruction elements of the case — whether the former president took or directed actions to impede government efforts to collect all the sensitive records.",
+      "published_date": "2023-04-03T15:35:06.949Z",
+      "topic": 19,
+      "publishers": [
+        8,
+        1
+      ]
+    }
+  },
+  {
+    "model": "newspaper.newspaper",
+    "pk": 15,
+    "fields": {
+      "title": "WashPost",
+      "content": "On Friday, the former president claimed on his Truth Social account that Juan Merchan — the New York Supreme Court justice who’s overseeing the criminal proceedings — had treated Trump’s company “VICIOUSLY” in a tax fraud case that wrapped up in January and had “railroaded” a former executive for the Trump Organization, Allen Weisselberg, into pleading guilty.\r\n\r\nBut Tacopina, speaking Sunday to George Stephanopoulos on ABC News’s “This Week,” waved off the criticism. “Do I think the judge is biased? Of course not,” Tacopina said. “How could I subscribe to that when I’ve had no interactions with the judge that would lead me to believe he’s biased?”",
+      "published_date": "2023-04-03T15:36:20.302Z",
+      "topic": 18,
+      "publishers": [
+        5,
+        6,
+        3
+      ]
+    }
+  },
+  {
+    "model": "newspaper.newspaper",
+    "pk": 16,
+    "fields": {
+      "title": "Soccer",
+      "content": "Starting with the 2024/25 edition, the UEFA Nations League will be expanded with the addition of a new knockout round to be played in March, thereby creating a continuum between the group stage ending in November and the finals played in June.\r\n\r\nLeague A group winners and runners-up will participate in home-and-away quarter-finals, with the winners of these ties qualifying for the Final Four.\r\n\r\nThe third-ranked teams from League A and the runners-up from League B, as well as the third-ranked teams from League B and the runners-up from League C, will play home-and-away promotion/relegation play-offs.\r\n\r\nThe expansion of the UEFA Nations League into the International Match Calendar window of March will only concern a selected number of teams and the remaining teams will already be available to start their European Qualifiers.",
+      "published_date": "2023-04-03T15:37:34.681Z",
+      "topic": 15,
+      "publishers": [
+        4,
+        15,
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "newspaper.newspaper",
+    "pk": 17,
+    "fields": {
+      "title": "Home Weather",
+      "content": "A potent winter storm will bring heavy snow and strong winds to parts of the West and Northern Plains early this week, including blizzard conditions for some areas.\r\n\r\nT​his new system has been named Winter Storm Vanessa by The Weather Channel. Vanessa will also produce more severe storms in the central states by Tuesday.\r\n\r\nHere's a look at where the storm is now and what's to come.\r\n\r\nL​atest Radar, Alerts\r\nT​he winter storm is spreading snow across the Mountain West right now, including some valley areas like the Salt Lake City metro.B​lizzard warnings have been posted by the National Weather Service for part of the Northern Plains, including Bismarck, North Dakota, and Rapid City, South Dakota. Additional blizzard warnings will likely be issued along the path of this storm.\r\n\r\nVarious winter storm warnings, winter storm watches and winter weather advisories also stretch from higher elevations of the Pacific Northwest into the Rockies and Northern Plains.",
+      "published_date": "2023-04-03T15:38:39.614Z",
+      "topic": 22,
+      "publishers": [
+        2,
+        13,
+        9,
+        6,
+        7,
+        3
+      ]
+    }
+  },
+  {
+    "model": "newspaper.newspaper",
+    "pk": 18,
+    "fields": {
+      "title": "TTS",
+      "content": "Across from one of Bangalore’s largest green spaces, a box-shaped structure enveloped in embossed stainless-steel panels has recently risen up in the southern Indian city’s central district. Occupying some 44,000 square feet, the much-anticipated Museum of Art and Photography (MAP) is set to be India’s first major art museum dedicated to the full range of the subcontinent’s contemporary visual culture, with a promise to redefine the country’s museum landscape in the process.\r\n\r\nA main driver of MAP’s approach is its focus on reaching and connecting its local community. That desire to make art a collective conversation open to all is visible on the museum’s exterior where a spray-painted, monochrome mural by street artist Marco Santini consists of words submitted from the community: meaningful, mirror, and inspiration, for example.",
+      "published_date": "2023-04-03T15:40:09.920Z",
+      "topic": 21,
+      "publishers": [
+        12,
+        5,
+        8,
+        4,
+        15,
+        1,
+        11
+      ]
+    }
+  },
+  {
+    "model": "newspaper.newspaper",
+    "pk": 19,
+    "fields": {
+      "title": "NYN",
+      "content": "The mug shot inventor\r\nReturn to menu\r\nThe first mug shot ever taken — in 1888 — was of an innocent man. Or at least, a man who was not under arrest. It was Alphonse Bertillon, a French police officer and researcher.\r\n\r\nPolice had already been photographing suspects from the earliest moments of photography, but the type and quality of the images varied dramatically. Bertillon theorized that standardizing the process would be a more useful tool. And, thus, the mug shot was born.\r\n\r\nHere he is demonstrating his famous format in 1912.",
+      "published_date": "2023-04-03T15:41:01.520Z",
+      "topic": 20,
+      "publishers": [
+        4,
+        15,
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "newspaper.newspaper",
+    "pk": 20,
+    "fields": {
+      "title": "WP",
+      "content": "DALLAS — Let’s stipulate that it’s pretty hard to make Kim Mulkey really cry. Not phony ref-pleading bawling, but actual tears. By the time the final three-pointer had slipped silkily through the net for LSU, and her team had finished utterly wrecking Iowa with 102 points, she staggered against the scorer’s table and wept with astonishment at what they had done. LSU’s national championship was so unexpectedly brilliant that it was nearly as brilliant as that shimmering circus fire juggler’s outfit Mulkey had on, and some kind of fire was what she put in her team.\r\n\r\n“It’s really not like me,” she said. “ … I don’t know what it was, but I lost it.”\r\n\r\nLord knows what she said to them behind closed doors to provoke such a record outburst of points in that 102-85 national final. But you got some kind of clue from the way Angel Reese stalked tournament darling Caitlin Clark, Iowa’s player of the year, at the buzzer. First, Reese mockingly passed a hand over her face in that “You can’t see me gesture,” the one Clark herself had borrowed from WWE wrestler John Cena, the one that means you’re a superhero. Then Reese followed Clark toward the handshake line, holding up her ring finger and gesturing at it.",
+      "published_date": "2023-04-03T15:41:34.575Z",
+      "topic": 15,
+      "publishers": [
+        5,
+        8
+      ]
+    }
+  },
+  {
+    "model": "newspaper.newspaper",
+    "pk": 21,
+    "fields": {
+      "title": "MTV",
+      "content": "Gustav Klimt created the famous Beethoven Frieze for the XIVth exhibition of the Association of Visual Artists Vienna Secession, which was held between April 15 and June 27, 1902. Conceived as a tribute to the composer Ludwig van Beethoven, the presentation epitomized the Secessionists’ vision of an encompassing synthesis of the arts. Twenty-one artists worked together under the direction of Josef Hoffmann.\r\n\r\n \r\n\r\nAt the center of the exhibition, in the main hall, stood Max Klinger’s Beethoven statue. In addition to Klimt’s Beethoven Frieze, the show featured wall paintings and decorations by Alfred Roller, Adolf Böhm, Ferdinand Andri and numerous other artists. The stated objective was to reunite the separate arts—architecture, painting, sculpture and music—under a common theme: the “work of art” was to emerge from the interplay of the design of the rooms and the wall paintings and sculptures.\r\n\r\n \r\n\r\nKlimt’s monumental wall cycle was located in the left-hand aisle, which visitors to the exhibition entered first. An opening in the wall offered a view of Max Klinger’s Beethoven statue, hinting at the intended synergy of architecture, painting (Klimt’s Beethoven Frieze) and sculpture (Klinger’s Beethoven).\r\n\r\n \r\n\r\nWith nearly 60,000 visitors, the XIVth exhibition was one of the Secession’s greatest public successes. It also proved crucial to Klimt’s further development, as well as that of numerous other participating artists: the ideal of the interplay and aesthetic integration of all artistic disciplines and the collaboration tested in the Beethoven exhibition was successfully continued by the Wiener Werkstätte, among others.",
+      "published_date": "2023-04-03T15:42:28.618Z",
+      "topic": 16,
+      "publishers": [
+        6,
+        7
+      ]
+    }
+  },
+  {
+    "model": "newspaper.newspaper",
+    "pk": 22,
+    "fields": {
+      "title": "HoliwoodN",
+      "content": "The Apple TV+ series Extrapolations is a difficult watch for a number of reasons. There’s the attempt to predict the end of the world in anthology format. The hurling of data at a stunned viewers face, with title sequences listing global temperature increase and population displacement. The absence of any believable or relatable characters. And the fact that it’s on Apple TV+. \r\n\r\nExtrapolations creator Scott Z Burns has respectable form in the “we’re all going to die” genre – his 2011 screenplay Contagion became panic viewing at the start of the Covid pandemic thanks to its accuracy, the result of his detailed research with the World Health Organisation. For Extrapolations he’s taken current predictions on climate change and, um, extrapolated them to imagine what the earth will be like decades into the future. Although, as far as I can tell, there are no predictions suggesting that whales will end up speaking with Meryl Streep’s voice. \r\n\r\nThe script is data led, features Streep, Sienna Miller, Forest Whitaker, Marion Cotillard, Edward Norton and a host of other big-name stars in an unimpeachably worthy work of well-meaning celebrity cringe. It has characters saying things like “25 years ago, we thought crypto was going to be our saviour. Now it’s killing us with the carbon footprint.” And after hearing about an earthquake a normal everyday commuter says with their actual mouth the following words: “Sea-level change. More water, more weight on the tectonic plates.”",
+      "published_date": "2023-04-03T15:43:49.724Z",
+      "topic": 17,
+      "publishers": [
+        15,
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "newspaper.newspaper",
+    "pk": 23,
+    "fields": {
+      "title": "NBN",
+      "content": "On Friday, Zendaya arrived in Mumbai with boyfriend Tom Holland for the Nita Mukesh Ambani Cultural Centre gala. The couple attended the second day of the grand opening event. The Euphoria star stunned on the red carpet in a blue Rahul Mishra saree. Zendaya's longtime stylist Law Roach was also present with her for the special fashion exhibit on day two. A fan revealed on Twitter that she messaged the actor on Instagram and she said that she had done her makeup herself for the event. (Also read: Tom Holland, Zendaya spotted at airport as they leave India post NMACC gala. See pics)The fan wrote online, \"she did her own make up last night love that'. The screenshot shows the fan's conversation with the actor on Instagram. She told Zendaya, \"You looked absolutely stunning in your saree (red heart emoji) hope you are enjoying your time in India!\" The next message says, \"Did you do your own makeup? If so - it looks amazing (heart eyes emoji).\" Zendaya reportedly replied back, \"Yes I did.\" She also shared a smiling face emoji and said thank you to the fan, who shared the screenshot later.",
+      "published_date": "2023-04-03T15:45:13.013Z",
+      "topic": 16,
+      "publishers": [
+        4,
+        15
+      ]
+    }
+  },
+  {
+    "model": "newspaper.newspaper",
+    "pk": 24,
+    "fields": {
+      "title": "JJC",
+      "content": "Lady Gaga was spotted shooting for Joker: Folie à Deux at a New York City location made famous by the 2019 film.Lady Gaga was spotted shooting for her upcoming film Joker: Folie À Deux in a key location at New York City that was made famous by Joaquin Phoenix's titular character from Joker (2019). Gaga, who plays Harley Quinn in the sequel to the 2019 blockbuster, was spotted at the iconic stairs in a make-up free look this week. (Also read: Lady Gaga's new look as Harley Quinn in Joker: Folie À Deux is a hit on internet: 'The one and only')The photos and videos from the paparazzo, which were shared on Twitter. showed Lady Gaga in an oversized black coat and gloves as she walked down the staircase connecting Shakespeare and Anderson avenues at West 167th Street in the Bronx. In another picture, she appeared to be discussing the scene in detail with her director Todd Philips. This location was made famous after the 2019 film Joker, where Joaquin Phoenix was seen dancing his way down the graffiti-laced stairs in character. Phoenix went on to win the Academy Award for Best Actor for his performance in the film.",
+      "published_date": "2023-04-03T15:46:03.658Z",
+      "topic": 16,
+      "publishers": [
+        9,
+        6
+      ]
+    }
+  }
+]
