@@ -32,7 +32,7 @@ python manage.py runserver
 ```
 # Secret Key
 In main folder you'll find a file .env_sample.
-In this file an example of SECRET_KEY is stored,
+In this file an example of DJANGO_SECRET_KEY is stored,
 required for the project.
 You may need create a file .env 
 and write here you secret key as in example.
