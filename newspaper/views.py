@@ -69,6 +69,15 @@ class RedactorDetailView(LoginRequiredMixin, generic.DetailView):
     template_name = "newspaper/redactor_detail.html"
     context_object_name = "redactor_detail"
 
+    def get_context_data(self, **kwargs) -> dict:
+        context = super().get_context_data(**kwargs)
+        redactor = self.get_object()
+        if redactor.id == self.request.user.id:
+            context["show_update_button"] = True
+        else:
+            context["show_update_button"] = False
+        return context
+
 
 class RedactorCreateView(LoginRequiredMixin, generic.CreateView):
     model = Redactor
