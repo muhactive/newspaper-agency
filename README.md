@@ -15,8 +15,7 @@ Password: passwordadmin
 ```
 
 # Check it out
-Now this link doesn't work
-[Newspaper Agency project deployed to Heroku](Link_will_be_here)
+[Newspaper Agency project deployed to Render](https://newspaper-agency-jgq1.onrender.com)
 
 # Installation
 
