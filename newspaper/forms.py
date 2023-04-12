@@ -5,9 +5,8 @@ from django.contrib.auth.forms import UserCreationForm
 from newspaper.models import Redactor, Newspaper, Topic
 
 
-class UpdateRedactorForm(UserCreationForm):
-
-    class Meta(UserCreationForm.Meta):
+class UpdateRedactorForm(forms.ModelForm):
+    class Meta:
         model = Redactor
         fields = (
             "username",
@@ -20,8 +19,6 @@ class UpdateRedactorForm(UserCreationForm):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.fields["username"].required = False
-        self.fields["password1"].required = False
-        self.fields["password2"].required = False
 
 
 class CreateRedactorForm(UserCreationForm):
