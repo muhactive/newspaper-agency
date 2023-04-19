@@ -351,6 +351,19 @@
     }
   },
   {
+    "model": "admin.logentry",
+    "pk": 28,
+    "fields": {
+      "action_time": "2023-04-12T11:29:49.992Z",
+      "user": 18,
+      "content_type": 6,
+      "object_id": "1",
+      "object_repr": "Alex Boldd",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Username\"]}}]"
+    }
+  },
+  {
     "model": "auth.permission",
     "pk": 1,
     "fields": {
@@ -704,10 +717,10 @@
   },
   {
     "model": "sessions.session",
-    "pk": "6lrd0b1y081wf56nfflcxym1u7vz7j02",
+    "pk": "5bafv79pat9qtpkepr6uptqsm86414yx",
     "fields": {
-      "session_data": ".eJxVjM0OgyAQhN-Fc0NWXEE99t5nILuAlf5AItpL03cvJh7a48z3zbyFpW2d7VbCYqMXo2jE6bdjcveQduBvlK5ZupzWJbLcFXnQIi_Zh8f5cP8OZipzXYehwyn4jhCg19phU3NvsAcNOBlENJpZMbuKoFGqZQIIA8KgqCWqp2l72lcscRWj-XwB5Vw7tQ:1pjMhs:_SZ6nKK8h0UovLyRyHodke3_A52R2PKRRYwTIFT7jdA",
-      "expire_date": "2023-04-17T16:06:56.628Z"
+      "session_data": ".eJxVjM0OgyAQhN-Fc0NAZUWPvfcZyLILlf5gItpL03cvJh7a48z3zbyFw22d3FbC4hKLUTStOP2WHuke8k74hvk6S5rzuiQvd0UetMjLzOFxPty_gwnLVNfadqC0GmAwPZoYCCL0NTP2rVdGITBoNmwrJtVYAoraeoIWOzP4WE_z9nSvVNIqRv35AhCUPGQ:1pmaQ2:8_2fPaNb1oICqNMIFZwO8DzPrnV1ITkVrJ--z2uddGI",
+      "expire_date": "2023-04-26T13:21:50.595Z"
     }
   },
   {
@@ -738,12 +751,12 @@
     "model": "newspaper.redactor",
     "pk": 1,
     "fields": {
-      "password": "pbkdf2_sha256$390000$X670ZNIjHKgD2kDHrMST0M$M1MKytVWufypdjM5kGtfyn4yZJlmKI+8uVDw1T/P7yU=",
-      "last_login": "2023-04-02T18:15:07.256Z",
+      "password": "pbkdf2_sha256$390000$YViIF7ZYBPF0XQIwpvUKe2$00n74mXNcBu6HBqfvZ/9yfg4AABe86tjXgOF4IBkdbc=",
+      "last_login": "2023-04-12T11:08:20Z",
       "is_superuser": true,
-      "username": "admin",
+      "username": "Hiro",
       "first_name": "Alex",
-      "last_name": "Bold",
+      "last_name": "Boldd",
       "email": "admin@gmail.com",
       "is_staff": true,
       "is_active": true,
@@ -1001,6 +1014,63 @@
     }
   },
   {
+    "model": "newspaper.redactor",
+    "pk": 18,
+    "fields": {
+      "password": "pbkdf2_sha256$390000$AQTJ4z37bwgVamL63I9MPB$az5XfNsFKHgziUx9bP7l4FMKm5m1WsEj/lB+mXazoZ4=",
+      "last_login": "2023-04-12T11:28:04.450Z",
+      "is_superuser": true,
+      "username": "muha1",
+      "first_name": "",
+      "last_name": "",
+      "email": "",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2023-04-12T11:27:39.299Z",
+      "years_of_experience": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "newspaper.redactor",
+    "pk": 22,
+    "fields": {
+      "password": "pbkdf2_sha256$390000$3ICypbmTaCOhnCo6nwXyva$90RQ9a/CV8yUuEdAAkh8Gy3T33DiJFlgiG9cIy0pAHA=",
+      "last_login": "2023-04-12T13:13:26.188Z",
+      "is_superuser": true,
+      "username": "admin",
+      "first_name": "",
+      "last_name": "",
+      "email": "",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2023-04-12T12:58:16.786Z",
+      "years_of_experience": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "newspaper.redactor",
+    "pk": 23,
+    "fields": {
+      "password": "pbkdf2_sha256$390000$6yshMxX99eZa4dGBxLB2b0$PvhaTtYZuT33fL+YjlR9jEGvruCxmReEsqSEpEuWIXE=",
+      "last_login": "2023-04-12T13:21:50.584Z",
+      "is_superuser": false,
+      "username": "user",
+      "first_name": "testuser",
+      "last_name": "testuser",
+      "email": "",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2023-04-12T13:00:04.073Z",
+      "years_of_experience": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
     "model": "newspaper.topic",
     "pk": 15,
     "fields": {
@@ -1095,8 +1165,8 @@
       "topic": 15,
       "publishers": [
         4,
-        15,
         1,
+        15,
         2
       ]
     }
@@ -1132,8 +1202,8 @@
         5,
         8,
         4,
-        15,
         1,
+        15,
         11
       ]
     }
@@ -1148,8 +1218,8 @@
       "topic": 20,
       "publishers": [
         4,
-        15,
         1,
+        15,
         2
       ]
     }
@@ -1191,8 +1261,8 @@
       "published_date": "2023-04-03T15:43:49.724Z",
       "topic": 17,
       "publishers": [
-        15,
         1,
+        15,
         2
       ]
     }
